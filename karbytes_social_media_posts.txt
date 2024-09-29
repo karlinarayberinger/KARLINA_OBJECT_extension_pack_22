@@ -1,7 +1,7 @@
 /**
  * file: karbytes_social_media_posts.txt
  * type: plain-text
- * date: 28_SEPTEMBER_2024
+ * date: 29_SEPTEMBER_2024
  * author: karbytes
  * license: PUBLIC_DOMAIN
  */
@@ -108,7 +108,16 @@ https://karbytesforlifeblog.wordpress.com/mdisc_karbytes_ultra_2024_edition_14/
 
 * * *
 
-On 28_SEPTEMBER_2024 at approximately 1:00PM Pacific Standard Time, karbytes shared the following karbytes-created web page as a social media post on karbytes' Facebook page:
+On 28_SEPTEMBER_2024 at approximately 2:30PM Pacific Standard Time, karbytes shared the following karbytes-created web page as a social media post on karbytes' Facebook page:
+
+https://karbytesforlifeblog.wordpress.com/mdisc_karbytes_ultra_2024_edition_14/
+
+(Note that the above statement was incorrectly added to the KARLINA_OBJECT_extension_pack_21 version of this social media log).
+
+* * *
+
+On 29_SEPTEMBER_2024 at approximately 5:00AM Pacific Standard Time, karbytes deleted the social media post featuring the following karbytes-created web page from karbytes' Twitter dot Com page, from karbytes' Minds dot Com page, from karbytes' LinkedIn dot Com page, from karbytes' Patreon dot Com page, and from karbytes' Facebook page:
 
 https://karbytesforlifeblog.wordpress.com/mdisc_karbytes_ultra_2024_edition_14/ 
 
+(Note that the aforementioned social media post was removed from the aforementioned social media profiles due to the fact that karbytes detected an error in the aforementioned web page named mdisc_karbytes_ultra_2024_edition_14; specifically, an incorrect number of total megabytes for the folder named karbytes_ultra_2024_edition_14).
