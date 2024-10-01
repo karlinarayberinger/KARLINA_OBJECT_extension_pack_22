@@ -1,7 +1,7 @@
 /**
  * file: karbytes_social_media_posts.txt
  * type: plain-text
- * date: 29_SEPTEMBER_2024
+ * date: 01_OCTOBER_2024
  * author: karbytes
  * license: PUBLIC_DOMAIN
  */
@@ -133,3 +133,9 @@ https://www.wired.com/story/an-ultrathin-graphene-brain-implant-was-just-tested-
 On 29_SEPTEMBER_2024 at approximately 3:00PM Pacific Standard Time, karbytes shared the following news article as a social media post on karbytes' Twitter dot Com page and on karbytes' Minds dot Com page:
 
 https://spectrum.ieee.org/parallel-processing-unit
+
+* * *
+
+On 01_OCTOBER_2024 at approximately 9:30AM Pacific Standard Time, karbytes shared the following news article as a social media post on karbytes' Twitter dot Com page and on karbytes' Minds dot Com page:
+
+https://singularityhub.com/2024/09/30/this-biohybrid-robot-is-made-of-human-cells-and-controlled-by-a-machine-mind/
