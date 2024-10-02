@@ -1,0 +1,339 @@
+/**
+ * file: karbytes_05_october_2024.txt
+ * type: plain-text
+ * date: 02_OCTOBER_2024
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
+
+I had a fanciful idea that I could use the closet in my bedroom at my dad's house as a place to grow my own psilocybin mushrooms (from one of those kits that can be ordered from the surface web and shipped to my residence address in Castro Valley, California for presumably less than $100) and also keep one of my laptops (or perhaps a Raspberry Pi device (which seems cheaper to purchase and more energy efficient to run than a laptop)) plugged into the wall and almost always turned on in order to host my own dark web page(s) and maybe even sell the shrooms I grow in my closet via the dark (or surface) web (and maybe even get a solar panel installed outside my bedroom window and powering that server so that I can truly say that I am making money come out of my closet with minimal effort and minimal investment from me). In all honesty, I am not really seriously intending to sell anything I grow or produce. I would instead just keep my shroom harvests for my own personal use and perhaps give some away as gifts to people other than myself. I just have a "fetish" for making valuable things come from a secretive basement-like setting which I am the sole proprietor of and inhabitant of.
+
+The purpose of this note is to elaborate a little on the note I published both as a plain-text file and as a WordPress dot Com web page earlier today (i.e. 02_OCTOBER_2024) at approximately 2:30AM Pacific Standard Time and whose HTML version is available at the following URL: https://karbytesforlifeblog.wordpress.com/karbytes_04_october_2024/
+
+As soon as I turned on my laptop today, I noticed that my .onion web page (which I created yesterday and described in the aforementioned journal entry) was automatically being hosted by the Apache server which I intalled on that laptop yesterday. I did not even open the command line nor even The Onion Router before I was able to load that .onion web page on my Android phone (via the Tor app for Android). When I turned off my laptop and refreshed the Tor browser on my phone, I saw that the .onion web page was offline. Then I turned my laptop back on, established a (wireless) mobile Internet connection between my phone and the laptop, and saw that the .onion web page was back online again.
+
+There are a few commands I thought I should record for future reference because they seem helpful in regards to keeping my dark web server running.
+
+The following command line command checks the status of the Tor service communicating between client terminals visiting my .onion web page and the Apache server running on my Ubuntu laptop. (I keep getting the message "active (exited)"). To exit the status view mode, enter q.
+
+sudo service tor status
+
+The following command line command checks the status of the Apache service hosting my .onion web page whenever my laptop is on (unless I modify my laptop's startup settings or disable or uninstall Apache). (I keep getting the message "active (running)").
+
+sudo service apache2 status
+
+Finally, before I close this note, I would like to copy-paste a conversation I had with ChatGPT-4o earlier this morning at approximately 4:00AM Pacific Standard Time about what constitutes the informational content of the World Wide Web...
+
+* * *
+
+karbytes:
+
+What is a larger percentage of the World Wide Web: the dark web, the surface web, or the deep web (and what is the percentage breakdown for each of those categories)?
+
+ChatGPT:
+
+The World Wide Web is divided into three major layers: the surface web, the deep web, and the dark web. Here’s a breakdown of these layers in terms of size and approximate percentage:
+
+1. Surface Web: This is the portion of the web that is publicly accessible and indexed by search engines like Google. It includes websites such as news portals, blogs, and e-commerce sites. However, it makes up a relatively small part of the overall web.
+
+- Estimated Percentage: About 4-5% of the entire web.
+
+2. Deep Web: This is the portion of the web that is not indexed by search engines and is not directly accessible through traditional web browsers. It includes private databases, academic archives, cloud services, and password-protected content. Most of the deep web consists of legitimate content that simply isn’t accessible to the general public.
+
+- Estimated Percentage: About 90-95% of the web.
+
+3. Dark Web: This is a subset of the deep web that is intentionally hidden and accessible only through specific browsers like Tor. It includes anonymous websites and services, often associated with illicit activities, but also with legitimate privacy-seeking users.
+
+- Estimated Percentage: About 0.01-0.1% of the web.
+
+Summary:
+
+- Surface Web: ~4-5%
+
+- Deep Web: ~90-95%
+
+- Dark Web: ~0.01-0.1%
+
+The deep web is by far the largest part of the web, with the dark web being a very small fraction of it.
+
+karbytes:
+
+What is most of the data of the deep web?
+
+ChatGPT:
+
+Most of the data in the deep web consists of legitimate, private, or non-indexed information that is not accessible to the general public or search engines. Here are the primary sources of deep web content:
+
+1. Databases: This includes large repositories of information that are not publicly searchable but are accessed through specific queries. Examples include:
+
+- Academic Databases: Scientific journals, research papers, and dissertations (e.g., JSTOR, PubMed).
+
+- Medical Records: Patient information and clinical databases in hospitals and research institutions.
+
+- Legal Documents: Court records, legal filings, and governmental archives.
+
+2. Private Websites: Password-protected or membership-based websites that restrict public access. Examples include:
+
+- Corporate Intranets: Internal networks used by companies for operations, employee records, and communications.
+
+- Subscription Services: Sites that require subscriptions or accounts (e.g., Netflix, news outlets behind paywalls).
+
+- Cloud Storage: Files stored in services like Google Drive or Dropbox that are not indexed by search engines.
+
+3. Financial Information: Banking transactions, payment records, and online financial systems that are secure and encrypted. Examples include:
+
+- Online Banking: User transactions and statements.
+
+- Payment Gateways: Services like PayPal or cryptocurrency wallets.
+
+4. Government Data: This includes sensitive or restricted government information that isn’t accessible to the public. Examples include:
+
+- Government Reports: Data from agencies that isn’t publicly available but used internally.
+
+- Classified Information: Sensitive intelligence or military communications.
+
+5. Email and Messaging Systems: Email providers, private messages, and communication platforms (e.g., Gmail, WhatsApp) are part of the deep web, as these communications are secure and not indexed.
+
+6. Social Media Content: Many posts, profiles, and interactions on social media platforms are private or restricted to certain user groups, making them part of the deep web.
+
+7. E-commerce and Online Marketplaces: Product listings, customer data, and transaction histories on sites like Amazon or eBay that are behind user logins or security measures.
+
+8. Academic and Research Networks: University portals, research repositories, and data-sharing networks where access is restricted to students, researchers, or academics.
+
+In summary, most of the deep web's content is made up of databases, private communications, and restricted access information that is either password-protected, non-indexed, or designed for specific user groups rather than public consumption.
+
+karbytes:
+
+What is most of the dark net data?
+
+ChatGPT:
+
+[karbytes selected the following response which ChatGPT-4o generated two of (and the alternate response is pasted below the karbytes-selected response).]
+
+[2/2]
+
+Most of the data on the dark net (or dark web) consists of content that is deliberately hidden and accessible only through specific technologies like Tor (The Onion Router) or I2P (Invisible Internet Project). While the dark net is often associated with illicit activities, it also hosts legitimate uses for privacy and anonymity. The primary categories of dark net data include:
+
+1. Illicit Markets and Services
+
+- Black Markets: The dark web is infamous for hosting illegal marketplaces where users can buy and sell goods such as drugs, weapons, counterfeit documents, and stolen data. Popular examples include the now-defunct Silk Road.
+
+- Fraudulent Services: Services related to identity theft, counterfeit currency, hacking tools, and fake IDs.
+
+- Stolen Data: Markets for selling stolen credentials, credit card information, and personal data obtained through data breaches.
+
+2. Cybercrime and Hacking Communities
+
+- Hacking Forums: Communities and platforms where hackers exchange tools, techniques, and information, such as malware, ransomware, and exploits.
+
+- DDoS-for-Hire: Services that offer distributed denial-of-service attacks on websites or individuals.
+
+- Botnets: Networks of compromised computers used for illegal activities, like sending spam or launching cyberattacks.
+
+3. Anonymous Communication
+
+- Forums and Chat Rooms: Platforms where users can communicate anonymously. These forums might host discussions about various topics, ranging from illicit trade to political activism.
+
+- Encrypted Messaging Services: Services that allow for secure and anonymous communication, often used by activists, journalists, and others who prioritize privacy.
+
+4. Censorship Resistance and Privacy
+
+- Whistleblowing Platforms: Some dark net sites provide a haven for whistleblowers to anonymously share sensitive information with journalists or the public, such as WikiLeaks mirrors.
+
+- Activist Websites: Political activists, journalists, and individuals in countries with high censorship use the dark net to bypass government restrictions and communicate freely.
+
+5. Political Dissidence and Journalism
+
+- Anonymous News Outlets: Certain journalists and news organizations have dark web versions of their websites to allow people to access information in heavily censored regions (e.g., The New York Times and BBC have dark web mirrors).
+
+- Opposition Groups: Political dissidents and opposition groups sometimes use the dark net to organize movements, raise awareness, or share documents without government surveillance.
+
+6. Cryptocurrency Transactions
+
+- Bitcoin Mixers: Services designed to obscure the origin and destination of cryptocurrency transactions, making it difficult to trace payments.
+
+- Dark Web Wallets: Cryptocurrency wallets used for illegal transactions or for privacy-focused financial activities.
+
+7. Legal and Privacy-Oriented Uses
+
+- Privacy Tools: Some dark net services are used by individuals looking to secure their communications or internet activity. This includes privacy-conscious users such as journalists, human rights defenders, or those avoiding surveillance.
+
+- Secure Hosting: Dark net sites offering services like anonymous website hosting for users seeking freedom from government or corporate oversight.
+
+8. Dark Web Libraries and Resources
+
+- E-Books and Educational Materials: Some dark net sites host vast libraries of freely available e-books, educational materials, and even academic papers that might not be easily accessible elsewhere.
+
+- Media Sharing: Platforms for anonymously sharing media like videos, music, and other files, often focusing on privacy.
+
+Summary:
+
+- Illicit Markets and Cybercrime: Drugs, weapons, stolen data, hacking tools (dominates the dark web in terms of activity and media coverage).
+
+- Anonymous Communication and Whistleblowing: Privacy-focused forums and platforms for whistleblowers.
+
+- Political Dissidence and Journalism: Platforms for political dissidents and journalists to bypass censorship.
+
+- Cryptocurrency Transactions: Anonymous financial transactions and laundering services.
+
+- Legal Privacy Uses: Tools and services for those seeking to maintain privacy and security from surveillance.
+
+While a significant portion of dark net activity involves illegal content and activities, there is also a smaller portion focused on privacy, political freedom, and legitimate uses of anonymity.
+
+[1/2]
+
+The dark net (or dark web), a small portion of the deep web that requires specific tools like the Tor browser to access, contains various types of data. While often associated with illicit activities, it also hosts legal and privacy-conscious content. Here’s a breakdown of the types of data found on the dark net:
+
+1. Illicit Marketplaces:
+
+- Drugs: A significant portion of the dark net is dedicated to illegal drug trade, where users can anonymously buy and sell narcotics.
+
+- Weapons: Some dark net markets sell firearms and other weapons, although these transactions are more niche.
+
+- Hacking Services and Tools: Markets often provide hacking services, malware, stolen data, and tools to compromise systems.
+
+- Counterfeit Goods: This includes fake documents (like passports and IDs), counterfeit currency, and other knock-off items.
+
+2. Stolen Data and Information:
+
+- Credit Card Information: Hacked or stolen credit card details are frequently bought and sold on the dark net.
+
+- Personal Data: This includes data from data breaches such as social security numbers, login credentials, and other personally identifiable information (PII).
+
+- Corporate Data: Some dark net vendors deal in stolen corporate information, trade secrets, and other sensitive files obtained through cyberattacks.
+
+3. Illegal Content:
+
+- Child Exploitation: Unfortunately, the dark net hosts some of the worst forms of illegal content, including child exploitation material, which is vigorously pursued by law enforcement.
+
+- Violent Content: Certain dark web communities share violent or disturbing content, though access to these is heavily restricted and illegal.
+
+4. Cryptocurrency and Financial Markets:
+
+- Bitcoin and Cryptocurrency Exchanges: Many dark net transactions use cryptocurrencies like Bitcoin to ensure anonymity. There are cryptocurrency mixers (services that obscure the transaction history of crypto funds) and services for laundering money.
+
+- Scams and Fraudulent Services: Fraudulent investment schemes, pyramid scams, and "get-rich-quick" schemes also appear on the dark net.
+
+5. Forums and Communities:
+
+- Anonymous Forums: Discussion forums on the dark net allow users to exchange information on various topics. While some of these are for illicit activities, others are simply for privacy-focused users to discuss sensitive topics.
+
+- Political Activism and Whistleblowing: Some parts of the dark net are used by activists, journalists, and whistleblowers to communicate and share information anonymously. Platforms like SecureDrop allow whistleblowers to submit sensitive data to journalists securely.
+
+6. Anonymity Tools and Software:
+
+- Encryption and Privacy Tools: Dark net sites offer privacy tools and resources for maintaining anonymity, such as VPN services, encryption software, and guides for secure communication.
+
+- Hosting Services: Anonymous web hosting services, including those that specialize in hosting dark net sites, are also a part of the dark net ecosystem.
+
+7. Legitimate Uses:
+
+- Whistleblowing Platforms: Platforms like SecureDrop or WikiLeaks provide safe spaces for whistleblowers to share sensitive information.
+
+- Censorship-Free Communication: In countries with strict censorship, some users turn to the dark net to communicate freely and access otherwise restricted information.
+- Privacy-Driven Blogging: Individuals and organizations host anonymous blogs or websites for privacy-conscious discussions on various subjects, from politics to personal safety.
+
+Summary:
+
+- Illicit goods and services (e.g., drugs, weapons, stolen data) dominate the dark net.
+
+- Anonymity tools and privacy-focused platforms also make up a portion of the dark net's content.
+
+- There is also legitimate use, such as whistleblowing platforms and uncensored communication, but these make up a smaller portion compared to illicit activities.
+
+The dark net is small relative to the entire web, and its reputation stems from both the illegal activities that occur there and the need for privacy and anonymity in legitimate activities.
+
+karbytes:
+
+What is most of the surface web data?
+
+ChatGPT:
+
+Most of the data on the surface web is publicly accessible and indexed by search engines like Google, Bing, and Yahoo. This portion of the web contains websites and content designed for general consumption. The primary categories of surface web data include:
+
+1. Public Websites
+
+- News and Media: News outlets, blogs, and magazines that publish articles, videos, and multimedia content for public viewing (e.g., CNN, BBC, personal blogs).
+
+- Corporate Websites: Company homepages, product descriptions, contact information, and marketing materials (e.g., Apple, Microsoft).
+
+- Government and Educational Sites: Public-facing government resources, educational materials, and official information from schools, universities, and government agencies.
+
+- Personal Blogs and Portfolios: Individuals’ personal sites or blogs, where they share their thoughts, expertise, projects, and portfolios.
+
+2. E-commerce Sites
+
+- Online Retailers: E-commerce giants like Amazon, eBay, and other shopping platforms that provide products and services for purchase by the public.
+
+- Marketplaces: Public-facing markets that allow buyers and sellers to connect, such as Etsy or Alibaba.
+
+- Product Reviews: Review sites where users can leave feedback on products or services (e.g., Yelp, TripAdvisor).
+
+3. Social Media and Public Forums
+
+- Social Networks: Platforms like Facebook, Twitter (X), Instagram, and LinkedIn that host public profiles, posts, and interactions. Although some content on these platforms is private, a large portion is publicly available or indexed by search engines.
+
+- Public Forums and Communities: Discussion platforms like Reddit, StackOverflow, and Quora where users publicly ask and answer questions, participate in conversations, or share resources.
+
+4. Multimedia Platforms
+
+- Video Sharing: Publicly available videos hosted on platforms like YouTube and Vimeo, where users can share video content for a wide audience.
+
+- Music Streaming: Music and podcast platforms that offer free or ad-supported content for public consumption (e.g., Spotify, SoundCloud).
+
+- Image Sharing: Sites like Flickr or public photo galleries where users upload and share visual media.
+
+5. Search Engine Results and Indexes
+
+- Search Engine Indexes: The web pages, documents, and resources indexed by search engines, making them easily accessible through keyword searches. These include websites, PDFs, and various publicly available documents.
+
+6. Open-Access Educational Resources
+
+- Open-Access Journals: Publicly available academic articles and research papers published in open-access journals (e.g., PLOS ONE, arXiv).
+
+- Tutorials and How-To Guides: Public educational content, such as tutorials, online courses, and instructional guides (e.g., Khan Academy, Coursera's free courses).
+
+7. Entertainment and Gaming
+
+- Streaming Services: Free or ad-supported sections of entertainment platforms where users can watch movies, series, or play games (e.g., YouTube Movies, browser-based games).
+
+- Game Information and Communities: Public-facing websites and forums dedicated to gaming news, walkthroughs, and fan discussions.
+
+8. Wikis and Knowledge Repositories
+
+- Wikipedia and Other Wikis: Free, user-contributed encyclopedic websites, with Wikipedia being the most prominent example. These sites are public and indexed for search engines.
+
+- Knowledge Repositories: Publicly available databases that host informational content, like WikiHow or various niche wikis for different subjects (e.g., Fandom, TechWiki).
+
+9. Advertising and Marketing
+
+- Banner Ads and Campaigns: Public advertisements displayed on websites, blogs, and media platforms.
+
+- SEO and Content Marketing: Content created for search engine optimization (SEO), often to drive traffic to websites or sell products/services.
+
+10. Open Data and Public Records
+
+- Public Datasets: Open data repositories maintained by governments or organizations that allow users to access raw data (e.g., U.S. Census Bureau, World Bank).
+
+- Public Legal Records: Legal documents, case files, and public databases of laws and regulations available to the general public.
+
+Summary:
+
+- Public Websites: Corporate sites, government pages, personal blogs, etc.
+
+- 
+- E-commerce Sites: Online retailers and marketplaces.
+
+- Social Media: Public posts, profiles, and discussions.
+
+- Multimedia: Publicly accessible videos, music, and images.
+
+- Educational Resources: Open-access academic journals and tutorials.
+
+- Entertainment: Streaming services and gaming platforms.
+
+- Wikis: Knowledge repositories like Wikipedia.
+
+- Advertising: Public-facing online ads and marketing content.
+
+The surface web is dominated by publicly available information meant for wide distribution and easy access, with a heavy emphasis on e-commerce, entertainment, education, and media.
