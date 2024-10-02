@@ -5,7 +5,6 @@
  * author: karbytes
  * license: PUBLIC_DOMAIN
  */
-
 HOSTING_KARBYTES_FIRST_ONION_WEB_PAGE
 
 The video at the following Uniform Resource Locator depicts karbytes navigating through the (surface) website named Karbytes For Life Blog dot WordPress dot Com to get to the special cyan-colored hyperlink which links to karbytes’ first .onion web page from a device other than the local machine which was hosting that .onion web page. Specifically, karbytes was accessing that (dark) web page (pointed to by the aforementioned cyan-colored hyperlink) through an Android phone (and using that phone to establish a mobile Internet connection with the Linux laptop which was functioning as the server for that .onion web page (using Apache (web server) and Tor (dark net access) services running on that Linux machine)). Technically, whenever that Linux machine is running those Apache and Tor services (while that .onion web page source code is hosted in the correct file directory on that Linux machine), that .onion web page is available from any terminal of the World Wide Web provided that terminal is using Tor as the web browser to access that web page. In this case, karbytes was using the Android Tor app to access the dark web:
@@ -30,7 +29,6 @@ if (window.AudioContext || window.webkitAudioContext) {
 } else {
     alert("Your browser does not support the Web Audio API. Sound generation will not work.");
 }
-
 javascript_file_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/pi_approximation.js
 
 css_file_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/karbytes_aesthetic.css
@@ -38,7 +36,6 @@ css_file_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJE
 The local host address karbytes’ used to test the Apache server is as follows:
 
 h​ttp://localhost
-
 Before karbytes modified the Apache configuration file to point to karbytes’ first onion web page, the Apache server was configured to point to the default file (named index.html) whose source code has been saved to a karbytes GitHub repository at the following Uniform Resource Locator:
 
 html_file_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/index.html
@@ -67,7 +64,6 @@ Debian/Ubuntu-based systems:
 
 sudo apt update
 sudo apt install apache2
-
 2. Configure Apache for Your Custom HTML File
 
 Run the following command to open the file manager with root privileges:
@@ -75,7 +71,6 @@ Run the following command to open the file manager with root privileges:
 [bash]
 
 sudo nautilus /var/www/html
-
 Enter your password when prompted. This will open a new instance of the file manager with administrative rights, allowing you to copy, move, or edit files in the /var/www/html directory.
 
 Place Your HTML File in the Document Root
@@ -85,7 +80,6 @@ Edit the Apache configuration file:
 [bash]
 
 sudo nano /etc/apache2/sites-available/000-default.conf
-
 Look for the following section and modify it to point to your custom HTML file:
 
 [bash]
@@ -94,13 +88,11 @@ Look for the following section and modify it to point to your custom HTML file:
     DocumentRoot /var/www/html
     DirectoryIndex your-custom-file.html
 </VirtualHost>
-
 Restart Apache for the changes to take effect:
 
 [bash]
 
 sudo systemctl restart apache2
-
 3. Set Up the .onion Service (Tor Hidden Service)
 
 Install the Tor package on your server:
@@ -108,7 +100,6 @@ Install the Tor package on your server:
 [bash]
 
 sudo apt install tor
-
 Configure Tor to Work with Apache:
 
 Open the Tor configuration file:
@@ -116,14 +107,12 @@ Open the Tor configuration file:
 [bash]
 
 sudo nano /etc/tor/torrc
-
 Add the following lines to configure your hidden service:
 
 [bash]
 
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:80
-
 This will forward traffic from your Tor hidden service to your Apache web server running on port 80.
 
 Restart the Tor service to apply the changes:
@@ -131,15 +120,13 @@ Restart the Tor service to apply the changes:
 [bash]
 
 sudo systemctl restart tor
-
 Get your .onion address: The .onion address will be created in the /var/lib/tor/hidden_service/hostname file. You can view it with:
 
 [bash]
 
 sudo cat /var/lib/tor/hidden_service/hostname
-
 This is the address you will use to access your site over the Tor network.
 
 4. Access the .onion Site
 
-Once you’ve done these steps, you can access your custom HTML file through the .onion address you obtained, using a Tor browser or any other Tor-compatible application. 
+Once you’ve done these steps, you can access your custom HTML file through the .onion address you obtained, using a Tor browser or any other Tor-compatible application.
