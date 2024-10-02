@@ -1,0 +1,145 @@
+/**
+ * file: karbytes_04_october_2024.txt
+ * type: plain-text
+ * date: 02_OCTOBER_2024
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
+
+HOSTING_KARBYTES_FIRST_ONION_WEB_PAGE
+
+The video at the following Uniform Resource Locator depicts karbytes navigating through the (surface) website named Karbytes For Life Blog dot WordPress dot Com to get to the special cyan-colored hyperlink which links to karbytes’ first .onion web page from a device other than the local machine which was hosting that .onion web page. Specifically, karbytes was accessing that (dark) web page (pointed to by the aforementioned cyan-colored hyperlink) through an Android phone (and using that phone to establish a mobile Internet connection with the Linux laptop which was functioning as the server for that .onion web page (using Apache (web server) and Tor (dark net access) services running on that Linux machine)). Technically, whenever that Linux machine is running those Apache and Tor services (while that .onion web page source code is hosted in the correct file directory on that Linux machine), that .onion web page is available from any terminal of the World Wide Web provided that terminal is using Tor as the web browser to access that web page. In this case, karbytes was using the Android Tor app to access the dark web:
+
+video_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/karbytes_first_onion_web_page_live_demonstration_01october2024.mp4
+
+dark_web_page_link: http://ijnqld5dkly6cpvds37nap7n7n5f2tjc4e623b3x7dkzh563wpj6v4yd.onion/
+
+html_file_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/unlisted_web_page_karbytes_first_onion_web_page.html
+
+* * *
+
+TESTING_KARBYTES_FIRST_ONION_WEB_PAGE_VIA_LOCAL_HOST
+
+Because The Onion Router (i.e. Tor) web browser does not allow screenshots to be taken of web pages which are accessed via Tor (for security reasons), karbytes accessed that web page via the Firefox web browser using the following local host address (which is used to test whether the Apache server is configured to host the correct files (which are located in a particular local directory)). Also, before karbytes settled on making karbytes’ PI_APPROXIMATION application the (interactive) application to be showcased on karbytes’ first .onion web page, karbytes tried showcasing karbytes’ BEATS_MACHINE application but discovered that Tor restricts access to the Web Audio API (Application Programming Interface) using the following code snippet inside of that application’s constituent JavaScript file:
+
+/** This code snippet was provided by ChatGPT-4o. */
+if (window.AudioContext || window.webkitAudioContext) {
+    // Initialize Web Audio API and generate sound
+    var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    // Your existing code for sound generation
+} else {
+    alert("Your browser does not support the Web Audio API. Sound generation will not work.");
+}
+
+javascript_file_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/pi_approximation.js
+
+css_file_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/karbytes_aesthetic.css
+
+The local host address karbytes’ used to test the Apache server is as follows:
+
+h​ttp://localhost
+
+Before karbytes modified the Apache configuration file to point to karbytes’ first onion web page, the Apache server was configured to point to the default file (named index.html) whose source code has been saved to a karbytes GitHub repository at the following Uniform Resource Locator:
+
+html_file_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/index.html
+
+image_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/karbytes_first_dark_web_server_test_on_android_phone_using_linux_laptop_as_server_01october2024.jpg
+
+After karbytes modified the aforementioned configuration file, karbytes refreshed the Firefox browser and saw that the Apache server was successfully pointing to the correct file (named unlisted_web_page_karbytes_first_onion_web_page.html) and took a screenshot of karbytes’ dark web page after clicking the START button which invokes the JavaScript functions to simulate the throwing of random darts at a square-shaped canvas in order to approximate the number Pi as according to how many darts land inside of the circular area which is inscribed inside of that square-shaped canvas and how many darts land in the area outside the bounds of that circle (while all of the darts in that simulation land inside of the square-shaped canvas at a rate of one dart per second). That screenshot is located at the following Uniform Resource Locator:
+
+image_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/karbytes_first_onion_web_page_localhost_via_firefox_screenshot_02october2024.png
+
+karbytes’ first dark web page’s source code is hosted at the following Uniform Resource Locator:
+
+html_file_link: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/unlisted_web_page_karbytes_first_onion_web_page.html
+
+* * *
+
+INSTALLING_AND_CONFIGURING_APACHE_AND_TOR
+
+karbytes consulted ChatGPT-4o for instructions on how to host karbytes’ first onion web page after finding out that all of the allegedly free dark web hosting services were offline and the other available dark net hosting services charged a fee to host content. karbytes did not want to spend money on something intended to be little more than a simple demonstration web page to serve as an example of what a dark web page is. Also, karbytes thought it would be more fun and immersive to host its own dark web page. Hence, karbytes asked ChatGPT-4o for precise instructions on how to go about doing that and applied the following instructions which ChatGPT-4o generated (which have been abridged for the sake of brevity):
+
+1. Install Apache Web Server
+
+Debian/Ubuntu-based systems:
+
+[bash]
+
+sudo apt update
+sudo apt install apache2
+
+2. Configure Apache for Your Custom HTML File
+
+Run the following command to open the file manager with root privileges:
+
+[bash]
+
+sudo nautilus /var/www/html
+
+Enter your password when prompted. This will open a new instance of the file manager with administrative rights, allowing you to copy, move, or edit files in the /var/www/html directory.
+
+Place Your HTML File in the Document Root
+
+Edit the Apache configuration file:
+
+[bash]
+
+sudo nano /etc/apache2/sites-available/000-default.conf
+
+Look for the following section and modify it to point to your custom HTML file:
+
+[bash]
+
+<VirtualHost *:80>
+    DocumentRoot /var/www/html
+    DirectoryIndex your-custom-file.html
+</VirtualHost>
+
+Restart Apache for the changes to take effect:
+
+[bash]
+
+sudo systemctl restart apache2
+
+3. Set Up the .onion Service (Tor Hidden Service)
+
+Install the Tor package on your server:
+
+[bash]
+
+sudo apt install tor
+
+Configure Tor to Work with Apache:
+
+Open the Tor configuration file:
+
+[bash]
+
+sudo nano /etc/tor/torrc
+
+Add the following lines to configure your hidden service:
+
+[bash]
+
+HiddenServiceDir /var/lib/tor/hidden_service/
+HiddenServicePort 80 127.0.0.1:80
+
+This will forward traffic from your Tor hidden service to your Apache web server running on port 80.
+
+Restart the Tor service to apply the changes:
+
+[bash]
+
+sudo systemctl restart tor
+
+Get your .onion address: The .onion address will be created in the /var/lib/tor/hidden_service/hostname file. You can view it with:
+
+[bash]
+
+sudo cat /var/lib/tor/hidden_service/hostname
+
+This is the address you will use to access your site over the Tor network.
+
+4. Access the .onion Site
+
+Once you’ve done these steps, you can access your custom HTML file through the .onion address you obtained, using a Tor browser or any other Tor-compatible application. 
