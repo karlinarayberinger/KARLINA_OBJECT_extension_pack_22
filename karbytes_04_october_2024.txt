@@ -5,6 +5,7 @@
  * author: karbytes
  * license: PUBLIC_DOMAIN
  */
+
 HOSTING_KARBYTES_FIRST_ONION_WEB_PAGE
 
 The video at the following Uniform Resource Locator depicts karbytes navigating through the (surface) website named Karbytes For Life Blog dot WordPress dot Com to get to the special cyan-colored hyperlink which links to karbytes’ first .onion web page from a device other than the local machine which was hosting that .onion web page. Specifically, karbytes was accessing that (dark) web page (pointed to by the aforementioned cyan-colored hyperlink) through an Android phone (and using that phone to establish a mobile Internet connection with the Linux laptop which was functioning as the server for that .onion web page (using Apache (web server) and Tor (dark net access) services running on that Linux machine)). Technically, whenever that Linux machine is running those Apache and Tor services (while that .onion web page source code is hosted in the correct file directory on that Linux machine), that .onion web page is available from any terminal of the World Wide Web provided that terminal is using Tor as the web browser to access that web page. In this case, karbytes was using the Android Tor app to access the dark web:
