@@ -7,7 +7,7 @@
 <p>/**<br />
 &nbsp;* file: <a style="background: #000000;color: #ff9000" href="https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/karbytes_05_october_2024.txt" target="_blank" rel="noopener">karbytes_05_october_2024.txt</a><br />
 &nbsp;* type: plain-text<br />
-&nbsp;* date: 02_OCTOBER_2024<br />
+&nbsp;* date: 03_OCTOBER_2024<br />
 &nbsp;* author: <a style="background: #000000;color: #ff9000" href="https://karbytesforlifeblog.wordpress.com/about_karbytes/" target="_blank" rel="noopener">karbytes</a><br />
 &nbsp;* license: <a style="background: #000000;color: #ff9000" href="https://karlinaobject.wordpress.com/public_domain/" target="_blank" rel="noopener">PUBLIC_DOMAIN</a><br />
 &nbsp;*/</p>
@@ -231,8 +231,39 @@
 <p>&#8211; Host the .onion Service Remotely: While this means setting up your .onion service on a separate machine or server, this guarantees that your connection will be routed through external relays. If the server is in a different physical location or network, your client connection will pass through the normal Tor relay structure (entry, middle, and exit nodes if necessary).</p>
 <p>4. Tor Bridges</p>
 <p>If you want to make sure your traffic passes through additional hops for anonymity, you can configure your Tor client to use Tor bridges. Bridges are unlisted relays that act as additional nodes between your client and the rest of the Tor network, potentially adding more layers of relays.</p>
-<p>In summary, the simplest way to force your connection through external relays is to separate the client and server instances by using VMs, containers, or running multiple instances of Tor on the same machine. You can also modify the Tor configuration to disable local optimizations that bypass relays, though this may require some manual configuration adjustments.
+<p>In summary, the simplest way to force your connection through external relays is to separate the client and server instances by using VMs, containers, or running multiple instances of Tor on the same machine. You can also modify the Tor configuration to disable local optimizations that bypass relays, though this may require some manual configuration adjustments.</p>
+<p>* * *</p>
+<p><span style="background:#00ffff">This part of this note was added at approximately 10:30AM Pacific Standard Time on 03_OCTOBER_2024. Everything in this note which is above this section of this note was generated and finalized between 12:00AM Pacific Standard Time on 02_OCTOBER_2024 and 11:59PM Pacific Standard Time on 02_OCTOBER_2024&#8230;</span></p>
+<p>Today I went to Philz Coffee in downtown Sunnyvale in order to test whether my .onion web page is accessible via the Tor app on my Android phone using my Android phone&#8217;s mobile data (via service provider AT&amp;T) and while my (Ubuntu) laptop (which is the (Apache) server hosting that .onion web page) is connected to the Philz Coffee public Wi-Fi network. </p>
+<p>So far, I have been able to successfully load my .onion web page using a different network than what laptop is using (to connect to what I assume are Tor relays physically located somewhere other than the Philz Coffee cafe I am located at while typing this note (and the coffee here, despite being some of the priciest I ever dropped dough on, is exceptionally delicious with complex and distinctive flavors)).</p>
+<p>I will now inquire ChatGPT-4o about how many Tor relays my darknet connection is using&#8230;</p>
+<p>* * *</p>
+<p>karbytes:</p>
+<p>Right now I have my laptop on while it is running Tor and Apache services in the background. My laptop is connected to the public Wi-Fi network at Philz Coffee in downtown Sunnyvale, California. My phone is not connected to the Wi-Fi network but has mobile data enabled. I used my phone&#8217;s Tor app to connect to the .onion web page which my laptop&#8217;s Apache service is hosting. How many Tor nodes is my connection (between my phone which is accessing the .onion web page and the laptop which is serving that .onion web page) using?</p>
+<p>ChatGPT:</p>
+<p>The connection between your phone and the .onion web page hosted by your laptop is likely using six Tor nodes in total, three for each side of the connection. Here&#8217;s why:</p>
+<p>1) Tor uses circuits, typically consisting of three nodes: an entry guard, a middle relay, and an exit node.</p>
+<p>&#8211; When your phone accesses the .onion web page through the Tor network, it creates a circuit with three nodes (entry, middle, and rendezvous point).</p>
+<p>2) .onion services don&#8217;t use an exit node, but they do require a rendezvous point to meet the hidden service (your laptop in this case).</p>
+<p>&#8211; Your laptop, serving the .onion web page, also creates a three-node circuit (entry, middle, and a second rendezvous point).</p>
+<p>3) The connection happens through a Tor rendezvous point, which is where the two circuits from your phone and your laptop meet.</p>
+<p>Thus, you have:</p>
+<p>&#8211; Three nodes for your phone&#8217;s connection.</p>
+<p>&#8211; Three nodes for your laptop&#8217;s connection.</p>
+<p>&#8211; The two circuits meet at a rendezvous point without needing to use an exit node.</p>
+<p>The total is six Tor nodes for the connection.</p>
+<p>karbytes:</p>
+<p>Where are each of those nodes likely to be physically located?</p>
+<p>ChatGPT:</p>
+<p>The physical locations of the Tor nodes (relays) in your connection are distributed across the globe. Here&#8217;s an overview of where they are likely located:</p>
+<p>1. Entry Guards:</p>
+<p>&#8211; For both your phone and your laptop, the entry guards are typically closer to your actual physical locations (e.g., somewhere within or near California) to minimize latency and establish a reliable connection. However, they are still randomly selected from the available Tor network relays, which could be anywhere in the world.</p>
+<p>2. Middle Relays:</p>
+<p>&#8211; Middle relays are chosen to route the traffic further into the Tor network and are randomly distributed across various countries. These relays could be anywhere globally, from Europe to Asia, the Americas, or other regions. Their locations are random and serve primarily to increase the anonymity of the connection.</p>
+<p>3. Rendezvous Point:</p>
+<p>&#8211; The rendezvous point, where your phone&#8217;s circuit meets your laptop’s circuit, is also randomly chosen. It could be located in any country or region worldwide. The point is selected from available relays in the Tor network and is not influenced by the locations of either your phone or laptop.</p>
+<p>In summary, while the entry guards are more likely to be near your geographic location in California, the middle relays and rendezvous point could be physically located almost anywhere in the world, as they are selected randomly from the global pool of Tor relays. Tor&#8217;s design ensures these relays are distributed globally to enhance anonymity and privacy.
 </p></div>
 <hr />
-<p>This web page was last updated on 02_OCTOBER_2024. The content displayed on this web page is licensed as <a style="background: #000000;color: #ff9000" href="https://karlinaobject.wordpress.com/public_domain/" target="_blank" rel="noopener">PUBLIC_DOMAIN</a> intellectual property.</p>
+<p>This web page was last updated on 03_OCTOBER_2024. The content displayed on this web page is licensed as <a style="background: #000000;color: #ff9000" href="https://karlinaobject.wordpress.com/public_domain/" target="_blank" rel="noopener">PUBLIC_DOMAIN</a> intellectual property.</p>
 <hr />
