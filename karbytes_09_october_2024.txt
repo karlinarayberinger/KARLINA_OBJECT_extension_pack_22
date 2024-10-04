@@ -10,28 +10,52 @@ While in the coffee shop today, I saw a guy wearing a shirt with the following m
 
 I did not think much of it at the time and quickly moved my attention to some other subject because I thought (and still think) privacy is on overly emphasized and underly analyzed concept.
 
-karbytes_0: "What is privacy for?"
+karbytes_0: “What is privacy for?”
 
-karbytes_1: "Privacy is useful for at least one purpose: preventing identity theft."
+karbytes_1: “Privacy is useful for at least one purpose: preventing identity theft.”
 
-karbytes_1: "(Privacy theft is when some person, X, steals information from another person, Y, which would normally be kept hidden from the general public, only used in specific transactional contexts (i.e. legal, medical, and financial matters), and associated with exactly one person (and that person is Y in this example). Given the fact that X has access to Y's private personally identifying information, X could then use that information to impersonate Y and hence make fraudulent credit card purposes using Y's name and credit card number (and other transactions using that stolen information))."
+karbytes_1: “(Privacy theft is when some person, X, steals information from another person, Y, which would normally be kept hidden from the general public, only used in specific transactional contexts (i.e. legal, medical, and financial matters), and associated with exactly one person (and that person is Y in this example). Given the fact that X has access to Y’s private personally identifying information, X could then use that information to impersonate Y and hence make fraudulent credit card purposes using Y’s name and credit card number (and other transactions using that stolen information)).”
 
-karbytes_0: "What else is privacy useful for?"
+karbytes_0: “What else is privacy useful for?”
 
-karbytes_1: "A more 'controversial' purpose to privacy is using privacy mechanisms to hide the thoughts, actions, and even perceptions of a person, X, from surveilling and regulatory parties, Y, who would attempt to prevent X from having such perceptions, actions, and thoughts if Y knew that X was having such perceptions, actions, and thoughts. To be concise, keeping the actions, thoughts, and perceptions of X hidden from Y (especially if such actions, thoughts, and perceptions are deemed by Y to be controversial (i.e. a violation of Y's policies and/or what Y thinks is likely to disrupt Y's ideal of what a utopian society is)) enables X to (at least temporarily) get away with 'indulging' in such actions, thoughts, and perceptions."
+karbytes_1: “A more ‘controversial’ purpose to privacy is using privacy mechanisms to hide the thoughts, actions, and even perceptions of a person, X, from surveilling and regulatory parties, Y, who would attempt to prevent X from having such perceptions, actions, and thoughts if Y knew that X was having such perceptions, actions, and thoughts. To be concise, keeping the actions, thoughts, and perceptions of X hidden from Y (especially if such actions, thoughts, and perceptions are deemed by Y to be controversial (i.e. a violation of Y’s policies and/or what Y thinks is likely to disrupt Y’s ideal of what a utopian society is)) enables X to (at least temporarily) get away with ‘indulging’ in such actions, thoughts, and perceptions.”
 
-karbytes_0: "Anything else?"
+karbytes_0: “Anything else?”
 
-karbytes_1: "At the moment there is nothing further I would add to what privacy is useful for. I would, however, define privacy as the phenomenon of one information processing agent, X, limiting the accessibility of some body of information, N, to information processing agents other than those X explicitly permits to access N (and X is, by default, included in the X's list of information processing agents granted permission to access N (and access levels could vary depending on the respective information processing agent)). By default, X assigns itself full administrative access to N (which means X can view, modify, share, and delete N)." 
+karbytes_1: “At the moment there is nothing further I would add to what privacy is useful for. I would, however, define privacy as the phenomenon of one information processing agent, X, limiting the accessibility of some body of information, N, to information processing agents other than those X explicitly permits to access N (and X is, by default, included in the X’s list of information processing agents granted permission to access N (and access levels could vary depending on the respective information processing agent)). By default, X assigns itself full administrative access to N (which means X can view, modify, share, and delete N).”
 
-karbytes_0: "I feel like there is something more to Privacy than what you have said thus far."
+karbytes_0: “I feel like there is something more to Privacy than what you have said thus far.”
 
-karbytes_1: "Hmmmm. I think I know what you want me to say: that privacy is necessary to an information processing agent having any degree of free will or bodily or intellectual/creative autonomy."
+karbytes_1: “Hmmmm. I think I know what you want me to say: that privacy is necessary to an information processing agent having any degree of free will or bodily or intellectual/creative autonomy.”
 
-karbytes_0: "Yes! Yes! Without precious Privacy, a person would be rendered an automaton however sentient...right?"
+karbytes_0: “Yes! Yes! Without precious Privacy, a person would be rendered an automaton however sentient…right?”
 
-karbytes_1: "Uh...not really. I think an information processing agent could still exhibit the ability to make decisions without external governance even while information processing agents other than itself observe its thoughts, perceptions, and behavior (though that lack of privacy would make the respective information processing agent more likely to have its planned actions thwarted)."
+karbytes_1: “Uh…not really. I think an information processing agent could still exhibit the ability to make decisions without external governance even while information processing agents other than itself observe its thoughts, perceptions, and behavior (though that lack of privacy would make the respective information processing agent more likely to have its planned actions thwarted).”
 
-karbytes_0: "That's what I mean. An artist like me and my friends need privacy to function at full potential. Otherwise, our creativity is stifled and our options for self expression and novelty generation are severely limited."
+karbytes_0: “That’s what I mean. An artist like me and my friends need privacy to function at full potential. Otherwise, our creativity is stifled and our options for self expression and novelty generation are severely limited.”
 
-karbytes_1: "I feel sorry for you people. If you took my approach, you would see that creativity always has a competitive and war-like element to it. Information processing agents (presumably) do not live in a vacuum away from any competitors (over environmental resources). If you want to maximize your freedom of expression and ability to generate novel ideas, you would have to contend with the fact that you need to obtain physically finite resources in the environment you share with other entities who would otherwise consume them before they do."
+karbytes_1: “I feel sorry for you people. If you took my approach, you would see that creativity always has a competitive and war-like element to it. Information processing agents (presumably) do not live in a vacuum away from any competitors (over environmental resources). If you want to maximize your freedom of expression and ability to generate novel ideas, you would have to contend with the fact that you need to obtain physically finite resources in the environment you share with other entities who would otherwise consume those resources before they do.”
+
+karbytes_0: “Eww! I don’t like that idea that artistry and creative/intellectual endeavors should be competitive and violent instead of collaborative or respectful of people’s personal boundaries.”
+
+karbytes_1: “Reality is does not necessarily conform to any person’s expectations about how it works or how it ought to work. Nature is amoral as far as I and most of my philosopher friends can discern (and such people and I seem to agree that morality (i.e. concepts of what is ‘ethically correct’ and what is ‘ethically incorrect’) is always subjective (i.e. constrained to the context of a particular worldview held by a particular sentient (and presumably non-omniscient) information processing agent) rather than objective (i.e. existing independently of any particular worldview held by a particular non-omniscient (or omniscient) mind).”
+
+karbytes_1: “Let’s just keep the focus of this conversation only on what humans create, control, and experience and exclude everything else.”
+
+karbytes_0: “Okay. What would you like to talk about?”
+
+karbytes_1: “I want to talk about how artists need privacy in order to have true freedom of expression and unbounded creativity.”
+
+karbytes_0: “Unbounded creativity would be literal omnipotence. In other words, what you are suggesting (whether you intend to or not) is that you need some degree of privacy in order to assume full control over some universe (and, by implication of the word ‘omnipotent’, any and all universes simultaneously and asynchronously)).”
+
+karbytes_1: “No, no, no! That’s not what I meant. I told you, karbytes_0, I just wanted to talk about what is exclusively in the domain of human control and human subjectivity.”
+
+karbytes_0: “My apologies; I’ll try to keep my words constrained to an entirely anthropocentric context as per your requirements. So you think you need to have a room of your own to think, to dream, to wonder, to express yo’self to your heart’s content?”
+
+karbytes_1: “Yes! Yes! Yes! That’s it! Oh yeah, give it to me: my own luxury suite complete with a spa and queen sized bed.”
+
+karbytes_0: “I don’t have that kind of money; at least not right now. Besides, if I did, I doubt I would want to give it to you nor to anyone else. Instead, I would invest as much of it as possible in giving myself the competitive edge and invest in my own comfort, convenience, safety, and effectiveness at efficiently and joyfully accomplishing my goals.”
+
+karbytes_1: “How are you doing so well despite being so financially impoverished?”
+
+karbytes_0: “I’m not too financially impoverished to do something more than just take care of my basic survival needs. Instead, I happen to have the fortune of people willing to donate money to me so that I am not entirely dependent on the government, a job, nor strangers for material resources. It is not much money that they give me, but it is enough to enable me to enjoy what I think is a pretty decent standard of living. I understand that it may not be sustainable long-term (which is why I am endeavoring to get a full-time job that pays me well and is compatible with my goals and preferences as soon as possible and keeping such a job for as long as possible (or at least until the United States of America starts issuing every person making below a certain income threshold an unconditional monthly income sufficient to maintain my preferred standard of living (or at least what I consider to be what I need at bare-minimum to pursue my goals effectively and to honor my preferences effectively))).” 
