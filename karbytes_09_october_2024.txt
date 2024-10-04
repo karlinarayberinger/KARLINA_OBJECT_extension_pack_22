@@ -1,0 +1,37 @@
+/**
+ * file: karbytes_09_october_2024.txt
+ * type: plain-text
+ * date: 04_OCTOBER_2024
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
+
+While in the coffee shop today, I saw a guy wearing a shirt with the following message emblazoned on the back of it: #privacymatters
+
+I did not think much of it at the time and quickly moved my attention to some other subject because I thought (and still think) privacy is on overly emphasized and underly analyzed concept.
+
+karbytes_0: "What is privacy for?"
+
+karbytes_1: "Privacy is useful for at least one purpose: preventing identity theft."
+
+karbytes_1: "(Privacy theft is when some person, X, steals information from another person, Y, which would normally be kept hidden from the general public, only used in specific transactional contexts (i.e. legal, medical, and financial matters), and associated with exactly one person (and that person is Y in this example). Given the fact that X has access to Y's private personally identifying information, X could then use that information to impersonate Y and hence make fraudulent credit card purposes using Y's name and credit card number (and other transactions using that stolen information))."
+
+karbytes_0: "What else is privacy useful for?"
+
+karbytes_1: "A more 'controversial' purpose to privacy is using privacy mechanisms to hide the thoughts, actions, and even perceptions of a person, X, from surveilling and regulatory parties, Y, who would attempt to prevent X from having such perceptions, actions, and thoughts if Y knew that X was having such perceptions, actions, and thoughts. To be concise, keeping the actions, thoughts, and perceptions of X hidden from Y (especially if such actions, thoughts, and perceptions are deemed by Y to be controversial (i.e. a violation of Y's policies and/or what Y thinks is likely to disrupt Y's ideal of what a utopian society is)) enables X to (at least temporarily) get away with 'indulging' in such actions, thoughts, and perceptions."
+
+karbytes_0: "Anything else?"
+
+karbytes_1: "At the moment there is nothing further I would add to what privacy is useful for. I would, however, define privacy as the phenomenon of one information processing agent, X, limiting the accessibility of some body of information, N, to information processing agents other than those X explicitly permits to access N (and X is, by default, included in the X's list of information processing agents granted permission to access N (and access levels could vary depending on the respective information processing agent)). By default, X assigns itself full administrative access to N (which means X can view, modify, share, and delete N)." 
+
+karbytes_0: "I feel like there is something more to Privacy than what you have said thus far."
+
+karbytes_1: "Hmmmm. I think I know what you want me to say: that privacy is necessary to an information processing agent having any degree of free will or bodily or intellectual/creative autonomy."
+
+karbytes_0: "Yes! Yes! Without precious Privacy, a person would be rendered an automaton however sentient...right?"
+
+karbytes_1: "Uh...not really. I think an information processing agent could still exhibit the ability to make decisions without external governance even while information processing agents other than itself observe its thoughts, perceptions, and behavior (though that lack of privacy would make the respective information processing agent more likely to have its planned actions thwarted)."
+
+karbytes_0: "That's what I mean. An artist like me and my friends need privacy to function at full potential. Otherwise, our creativity is stifled and our options for self expression and novelty generation are severely limited."
+
+karbytes_1: "I feel sorry for you people. If you took my approach, you would see that creativity always has a competitive and war-like element to it. Information processing agents (presumably) do not live in a vacuum away from any competitors (over environmental resources). If you want to maximize your freedom of expression and ability to generate novel ideas, you would have to contend with the fact that you need to obtain physically finite resources in the environment you share with other entities who would otherwise consume them before they do."
