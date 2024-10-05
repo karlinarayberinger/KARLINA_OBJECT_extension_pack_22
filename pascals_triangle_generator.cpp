@@ -132,10 +132,10 @@ int main()
  */
 vector<vector<int>> generate_first_N_rows_of_Pascals_Triangle(int N) 
 {
-    // Declare array incrementing variables and set each of their initial values to zero.
+    // Declare loop control variables and set each of their initial values to zero.
     int i = 0, j = 0;
 
-    // Declare a two-dimentional mutable array for storing values representing the first N rows of Pascal's Triangle.
+    // Declare a vector of vectors (which is a mutable two-dimensional array) for storing values representing the first N rows of Pascal's Triangle.
     vector<vector<int>> pascals_triangle(N);
 
     // If N is smaller than one or larger than MAXIMUM_N, set N to ten.
@@ -159,7 +159,7 @@ vector<vector<int>> generate_first_N_rows_of_Pascals_Triangle(int N)
          */
         for (j = 1; j < i; j += 1) 
         {
-            // set the value of the (1 + (i * j))th Pascal's Triangle entry to the sum of the two entries directly above it.
+            // set the value of the current Pascal's Triangle entry to the sum of the two entries directly above it.
             pascals_triangle[i][j] = pascals_triangle[i - 1][j - 1] + pascals_triangle[i - 1][j];
         }
     }
