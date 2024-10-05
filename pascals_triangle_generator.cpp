@@ -83,10 +83,10 @@ int main()
     // Populate the two-dimensional vector array with values representing the first N rows of Pascal's Triangle.
     pascals_triangle = generate_first_N_rows_of_Pascals_Triangle(N);
 
-    // Print the first N rows of Pascal's Triangle (in the spatial configuration of an equilateral triangle) to the command line terminal.
+    // Print the first N rows of Pascal's Triangle (in the spatial configuration of an isosceles triangle) to the command line terminal.
     print_pascals_triangle(pascals_triangle, cout);
 
-    // Print the first N rows of Pascal's Triangle (in the spatial configuration of an equilateral triangle) to the output file stream.
+    // Print the first N rows of Pascal's Triangle (in the spatial configuration of an isosceles triangle) to the output file stream.
     print_pascals_triangle(pascals_triangle, file);
 
     // Print a closing message to the command line terminal.
@@ -109,7 +109,7 @@ int main()
 /**
  * Return a two-dimensional mutable array which represents the first N rows of Pascal's Triangle.
  * 
- * Pascal's Triangle is a triangular arrangement of natural numbers (resemling an equilateral triangle)
+ * Pascal's Triangle is a triangular arrangement of natural numbers (resemling an isosceles triangle)
  * such that the top row consists soley of the number 1,
  * each subsequent row begins and ends with 1,
  * and every other number in the arrangement is the sum of the two numbers directly above it.
@@ -169,18 +169,18 @@ vector<vector<int>> generate_first_N_rows_of_Pascals_Triangle(int N)
 }
 
 /**
- *  Print Pascal's Triangle (up to some natural number of rows) in equilateral triangle form
+ *  Print Pascal's Triangle (up to some natural number of rows) in isosceles triangle form
  *  such that the number in the top row is positioned along the vertical line which divides the 
  *  triangular permutation of numbers in half to the output stream.
  */
 void print_pascals_triangle(const vector<vector<int>> & pascals_triangle, ostream & output) 
 {
     int N = pascals_triangle.size();
-    int max_width = to_string(pascals_triangle[N - 1][N / 2]).length();  // Get width of the largest number.
+    int max_width = to_string(pascals_triangle[N - 1][N / 2]).length();  // Get the width of the largest number in the pascals_triangle object.
     output << "\n\nPrinting the first " << N << " rows of Pascal's Triangle...\n\n";
     for (int i = 0; i < N; i += 1) 
     {
-        // Print leading spaces to center the numbers.
+        // Print leading spaces to align the numbers in the output stream such that the numbers visually depict an isosceles triangle.
         output << setw((N - i) * (max_width + 1) / 2) << "";
 
         for (int j = 0; j <= i; ++j) output << setw(max_width) << pascals_triangle[i][j] << " ";
