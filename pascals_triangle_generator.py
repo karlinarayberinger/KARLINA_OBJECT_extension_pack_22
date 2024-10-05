@@ -50,7 +50,7 @@ def print_pascals_triangle(pascals_triangle, output):
 def main():
 
     # Open the file for writing (and generate that file if it does not exist).
-    with open("pascals_triangle_output.txt", "w") as file:
+    with open("pascals_triangle_generator_output.txt", "w") as file:
 
         # Print an opening message to the command line terminal.
         print("\n\n--------------------------------")
