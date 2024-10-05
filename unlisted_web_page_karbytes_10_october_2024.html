@@ -1,0 +1,137 @@
+<hr />
+<p><strong>karbytes_10_october_2024</strong></p>
+<hr />
+<p><span style="background: #ffff00">The text in the web page section below was copied from the plain-text file named <a style="background: #000000;color: #ff9000" href="https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/karbytes_10_october_2024.txt" target="_blank" rel="noopener">karbytes_10_october_2024.txt</a> in the “micro directory” website section named <a style="background: #000000;color: #00ff00" href="https://karbytesforlifeblog.wordpress.com/raw_github_files_directory_karlina_object_extension_pack_22/" target="_blank" rel="noopener">KARLINA_OBJECT_extension_pack_22</a> in the “macro directory” website section (named <a style="background: #000000;color: #00ff00" href="https://karbytesforlifeblog.wordpress.com/raw_github_files_macro_directory/" target="_blank" rel="noopener">RAW_GITHUB_FILES_MACRO_DIRECTORY</a>) of the website named <a style="background: #000000;color: #ff9000" href="https://karbytesforlifeblog.wordpress.com/" target="_blank" rel="noopener">Karbytes For Life Blog dot WordPress dot Com</a>. Some of the aforementioned copied <a style="background: #ff9000;color: #000000" href="https://en.wikipedia.org/wiki/Plain_text" target="_blank" rel="noopener">plain-text</a> was then replaced with relevant <a style="background: #ff9000;color: #000000" href="https://en.wikipedia.org/wiki/Hypertext" target="_blank" rel="noopener">hypertext</a> on this web page.</span></p>
+<p><em>To view hidden text inside each of the preformatted text boxes below, scroll horizontally.</em></p>
+<hr />
+<div style="font-family:monospace">
+<p>/**<br />
+&nbsp;* file: <a style="background: #000000;color: #ff9000" href="https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_22/main/karbytes_10_october_2024.txt" target="_blank" rel="noopener">karbytes_10_october_2024.txt</a><br />
+&nbsp;* type: plain-text<br />
+&nbsp;* date: 05_OCTOBER_2024<br />
+&nbsp;* author: <a style="background: #000000;color: #ff9000" href="https://karbytesforlifeblog.wordpress.com/about_karbytes/" target="_blank" rel="noopener">karbytes</a><br />
+&nbsp;* license: <a style="background: #000000;color: #ff9000" href="https://karlinaobject.wordpress.com/public_domain/" target="_blank" rel="noopener">PUBLIC_DOMAIN</a><br />
+&nbsp;*/</p>
+<p>The following conversation transcript was slightly modified for stylistic purposes and taken from a conversation had between karbytes and <a style="background: #ff9000;color: #000000" href="https://en.wikipedia.org/wiki/GPT-4o" target="_blank" rel="noopener">ChatGPT-4o</a> at approximately 1:30PM Pacific Standard Time on 05_OCTOBER_2024. The conversation pertains to karbytes&#8217; hosting its own <a style="background: #ff9000;color: #000000" href="https://en.wikipedia.org/wiki/.onion" target="_blank" rel="noopener">.onion</a> web page on a local (<a style="background: #ff9000;color: #000000" href="https://en.wikipedia.org/wiki/Linux" target="_blank" rel="noopener">Linux</a>) machine and how to keep the address of <a style="background: #000000;color: #ff9000" href="https://karbytesforlifeblog.wordpress.com/karbytes_04_october_2024/" target="_blank" rel="noopener">that .onion web page</a> unchanged when moving that web page to a new <a style="background: #ff9000;color: #000000" href="https://en.wikipedia.org/wiki/Server_(computing)" target="_blank" rel="noopener">server</a> machine (in order to keep that .onion web page relatively easy to locate on the <a style="background: #ff9000;color: #000000" href="https://en.wikipedia.org/wiki/Dark_web" target="_blank" rel="noopener">dark web</a> (which is accessible via The Onion Router (<a style="background: #ff9000;color: #000000" href="https://en.wikipedia.org/wiki/Tor_(network)" target="_blank" rel="noopener">Tor</a>) <a style="background: #ff9000;color: #000000" href="https://en.wikipedia.org/wiki/Web_browser" target="_blank" rel="noopener">web browser</a>) instead of changing that .onion web page&#8217;s address).</p>
+<p>* * *</p>
+<p>karbytes:</p>
+<p>How are .onion web page addresses generated (and are they unique global addresses)?</p>
+<p>ChatGPT:</p>
+<p>.onion web page addresses are generated through a process that involves creating a unique cryptographic key pair, specifically for use within the Tor network. Here’s an overview of how it works:</p>
+<p>1. Key Pair Generation:</p>
+<p>&#8211; When a Tor service (such as a website or server) is set up, the Tor software generates a public-private key pair using elliptic curve cryptography (earlier versions used RSA keys).</p>
+<p>&#8211; The private key is kept secret and is used to sign data, while the public key is used to derive the .onion address.</p>
+<p>2. Address Derivation:</p>
+<p>&#8211; The .onion address is derived from the hash of the public key. Specifically, a portion of the public key is hashed, and the first 16 or 56 characters of the base32-encoded hash form the .onion address.<br />
+V2 addresses (which are deprecated) use 16 characters derived from an RSA public key.</p>
+<p>&#8211; V3 addresses (the current standard) are 56 characters long and based on an elliptic curve public key.<br />
+This process ensures that each .onion address corresponds uniquely to its cryptographic key pair.</p>
+<p>3. Global Uniqueness:</p>
+<p>&#8211; Yes, .onion addresses are globally unique. Since the address is based on a cryptographic hash of the public key, no two addresses can be the same unless they are generated from the same key pair. This ensures that when you visit a particular .onion address, you&#8217;re accessing the correct hidden service tied to that key pair.</p>
+<p>4. Vanity Addresses:</p>
+<p>&#8211; Some people generate .onion addresses with custom prefixes (called &#8220;vanity addresses&#8221;) using brute force techniques to find a public key that produces a hash with the desired starting characters. This is computationally expensive but possible for short prefixes.</p>
+<p>In summary, .onion addresses are generated using cryptographic keys and are unique globally due to the nature of the hash function applied to those keys.</p>
+<p>karbytes:</p>
+<p>Is it possible to preserve the address of a particular .onion web page I currently have hosted on a local server I own if I get a new computer to serve that web page?</p>
+<p>ChatGPT:</p>
+<p>Yes, it is possible to preserve the .onion address of a Tor hidden service when moving to a new computer. The .onion address is tied to the private key that was generated when you initially set up the hidden service. If you transfer that key to the new server, you can maintain the same .onion address. Here’s how you can do it:</p>
+<p>Steps to Preserve the .onion Address:</p>
+<p>1. Locate the Hidden Service Directory:</p>
+<p>On the computer where you are currently hosting the Tor hidden service, find the directory where the Tor service stores the private key and hostname for the .onion address. By default, this is often located in:</p>
+<p>&#8211; Linux/Unix: <span style="background:#b1f1d8">/var/lib/tor/hidden_service/</span></p>
+<p>&#8211; Windows: Depends on where Tor is installed, but it should have a similar directory structure.</p>
+<p>Inside this folder, you&#8217;ll find two important files:</p>
+<p>&#8211; <span style="background:#b1f1d8">private_key</span>: This file contains the cryptographic private key that is used to generate the .onion address.</p>
+<p>&#8211; <span style="background:#b1f1d8">hostname</span>: This file contains the actual .onion address for your hidden service.</p>
+<p>2. Backup the Private Key:</p>
+<p>&#8211; Copy the entire hidden service directory, or at least the private_key file. This is the crucial file that determines your .onion address. Without this key, you cannot preserve the original address.</p>
+<p>3. Move to the New Server:</p>
+<p>&#8211; Set up Tor on your new computer.</p>
+<p>&#8211; Before starting the hidden service on the new machine, copy the private_key file (and optionally the <span style="background:#b1f1d8">hostname</span> file) from your backup into the new hidden service directory on the new server (usually something like <span style="background:#b1f1d8">/var/lib/tor/hidden_service/</span>).</p>
+<p>4. Start the Hidden Service on the New Server:</p>
+<p>&#8211; Once the <span style="background:#b1f1d8">private_key</span> is in place, start or restart the Tor service on the new server. Tor will use the copied private key to ensure the same .onion address is served from the new machine.</p>
+<p>Important Notes:</p>
+<p>&#8211; Private Key Security: The private key must be kept secure. Anyone with access to this key can potentially host a service using your .onion address.</p>
+<p>&#8211; Same Address, New Content: You can serve new content (or the same content) on the new server, but as long as you use the same private key, the .onion address will remain the same.</p>
+<p>&#8211; Permissions: Ensure that the permissions on the hidden service directory and the private_key file are correct after moving them to the new server. Tor usually requires strict permissions to ensure the files aren’t accessible by unauthorized users.</p>
+<p>By following these steps, you can effectively preserve your .onion address when moving the service to a new computer.</p>
+<p>karbytes:</p>
+<p>I found the files on my local (Linux) machine which contain that private key (hs_ed25519_secret_key) and that public key (hs_ed25519_public_key) in the file directory you specified alongside another file (hostname) containing the web address of my .onion web page. Although I was able to open and view the contents of hostname, I apparently need special software to open the other two files. How do I go about doing that?</p>
+<p>ChatGPT:</p>
+<p>The <span style="background:#b1f1d8">hs_ed25519_secret_key</span> and <span style="background:#b1f1d8">hs_ed25519_public_key</span> files that you found are in binary format, as they contain cryptographic keys. They aren&#8217;t meant to be directly human-readable, but they can be opened or converted into a more readable form using specific tools.</p>
+<p>Tools for Opening and Viewing Ed25519 Keys</p>
+<p>1. Using <span style="background:#b1f1d8">openssl</span>: <span style="background:#b1f1d8">openssl</span> is a widely available tool for working with cryptographic keys, though its support for Ed25519 keys is somewhat limited. It might not directly support viewing Ed25519 keys in the simplest format but can be useful for converting between key formats if needed.</p>
+<p>2. Using Python with Cryptography Libraries: You can use Python with libraries like cryptography or PyNaCl to read and manipulate Ed25519 keys. This method requires a bit of coding but will allow you to extract and view the public and private keys in a human-readable format.</p>
+<p>Here&#8217;s an example Python script using the cryptography library to read an Ed25519 private key:</p>
+<p>Installation:</p>
+<p>First, install the cryptography library if you don&#8217;t already have it:</p>
+<p>[bash]</p>
+<pre>pip install cryptography</pre>
+<p>Code to Read the Secret Key:</p>
+<p>[python]</p>
+<pre>
+from cryptography.hazmat.primitives.asymmetric import ed25519
+from cryptography.hazmat.backends import default_backend
+
+# Read the binary file containing the private key
+with open('hs_ed25519_secret_key', 'rb') as key_file:
+    private_key_data = key_file.read()
+
+# Load the private key (this skips the first byte, which is a format identifier)
+private_key = ed25519.Ed25519PrivateKey.from_private_bytes(private_key_data[1:])
+
+# Get the raw private and public bytes
+raw_private_bytes = private_key.private_bytes(
+    encoding=cryptography.hazmat.primitives.serialization.Encoding.Raw,
+    format=cryptography.hazmat.primitives.serialization.PrivateFormat.Raw,
+    encryption_algorithm=cryptography.hazmat.primitives.serialization.NoEncryption()
+)
+
+# Print the raw private key
+print(f"Private key (hex): {raw_private_bytes.hex()}")
+Code to Read the Public Key:
+Similarly, you can read the public key using this:
+
+python
+Copy code
+with open('hs_ed25519_public_key', 'rb') as key_file:
+    public_key_data = key_file.read()
+
+# The public key is stored directly in the file, so no need to skip the first byte
+public_key = ed25519.Ed25519PublicKey.from_public_bytes(public_key_data)
+
+# Print the public key in hexadecimal
+print(f"Public key (hex): {public_key.public_bytes().hex()}")
+Using nacl (PyNaCl): PyNaCl is another Python library that supports Ed25519 keys. If you prefer PyNaCl, you can follow a similar approach to reading and displaying the keys.
+</pre>
+<p>Installation:</p>
+<p>[bash]</p>
+<pre>pip install pynacl</pre>
+<p>Code to Read the Keys:</p>
+<p>[python]</p>
+<pre>
+import nacl.signing
+
+# Reading the private key
+with open('hs_ed25519_secret_key', 'rb') as f:
+    private_key_data = f.read()[1:]  # Skip the first byte, which is a format indicator
+
+private_key = nacl.signing.SigningKey(private_key_data)
+print(f"Private key (hex): {private_key.encode().hex()}")
+
+# Reading the public key
+with open('hs_ed25519_public_key', 'rb') as f:
+    public_key_data = f.read()
+
+public_key = nacl.signing.VerifyKey(public_key_data)
+print(f"Public key (hex): {public_key.encode().hex()}")
+</pre>
+<p>Summary:</p>
+<p>&#8211; <span style="background:#b1f1d8">hostname</span> is human-readable and contains the .onion address.</p>
+<p>&#8211; <span style="background:#b1f1d8">hs_ed25519_secret_key</span> contains your private key in a binary format.</p>
+<p>&#8211; <span style="background:#b1f1d8">hs_ed25519_public_key</span> contains the corresponding public key in binary format.</p>
+<p>If you only need to back up the keys or transfer them to another machine, you don’t need to open them; just copy the binary files. But if you want to inspect the keys, using a Python script with <span style="background:#b1f1d8">cryptography</span> or <span style="background:#b1f1d8">PyNaCl</span> is a good option.
+</div>
+<hr />
+<p>This web page was last updated on 05_OCTOBER_2024. The content displayed on this web page is licensed as <a style="background: #000000;color: #ff9000" href="https://karlinaobject.wordpress.com/public_domain/" target="_blank" rel="noopener">PUBLIC_DOMAIN</a> intellectual property.</p>
+<hr />
