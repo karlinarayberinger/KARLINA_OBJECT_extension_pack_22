@@ -155,7 +155,7 @@ vector<vector<int>> generate_first_N_rows_of_Pascals_Triangle(int N)
 
         /** 
          * For each element of the ith row of Pascal's Triangle,
-         * (starting at the leftmost element, pascals_triangle[i][0], and ending at the rightmost element, pascals_triangle[i][i - 0], in ascending row number)...
+         * (starting at the leftmost element, pascals_triangle[i][0], and ending at the rightmost element, pascals_triangle[i][i - 1], in ascending row number)...
          */
         for (j = 1; j < i; j += 1) 
         {
