@@ -110,7 +110,7 @@ int main()
  * Return a two-dimensional mutable array which represents the first N rows of Pascal's Triangle.
  * 
  * Pascal's Triangle is a triangular arrangement of natural numbers (resembling an isosceles triangle)
- * such that the top row consists soley of the number 1,
+ * such that the top row consists solely of the number 1,
  * each subsequent row begins and ends with 1,
  * and every other number in the arrangement is the sum of the two numbers directly above it.
  * 
