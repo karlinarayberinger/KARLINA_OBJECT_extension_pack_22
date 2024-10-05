@@ -57,10 +57,18 @@ def main():
         print("Start Of Program")
         print("--------------------------------")
 
-        # Print an opening message to the output file-handling system.
+        # Print an opening message to the output file.
         file.write("--------------------------------\n")
         file.write("Start Of Program\n")
         file.write("--------------------------------\n")
+
+        # Print "This C++ program generates the first N rows of Pascal's Triangle." to the command line terminal and to the output file.
+        print("\n\nThis Python program generates the first N rows of Pascal's Triangle.")
+        file.write("\n\nThis Python program generates the first N rows of Pascal's Triangle.")
+
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
 
         # Prompt the user to enter an input value and store that value in N.
         N = int(input("\n\nEnter the number of rows for Pascal's Triangle: "))
@@ -72,7 +80,7 @@ def main():
         # Generate Pascal's Triangle
         pascals_triangle = generate_first_N_rows_of_pascals_triangle(N)
 
-        # Print Pascal's Triangle to both the file and to the command line.
+        # Print Pascal's Triangle to both the output file and to the command line terminal.
         print_pascals_triangle(pascals_triangle, file)
 
         # Print a closing message to the command line terminal.
@@ -80,7 +88,7 @@ def main():
         print("End Of Program")
         print("--------------------------------\n\n")
 
-        # Print a closing message to the output file-handling system.
+        # Print a closing message to the output file.
         file.write("\n\n--------------------------------\n")
         file.write("End Of Program\n")
         file.write("--------------------------------\n")

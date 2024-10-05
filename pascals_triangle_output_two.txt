@@ -3,6 +3,10 @@ Start Of Program
 --------------------------------
 
 
+This Python program generates the first N rows of Pascal's Triangle.
+
+--------------------------------
+
 Entered value: N = 20
 
 Printing the first 20 rows of Pascal's Triangle...
