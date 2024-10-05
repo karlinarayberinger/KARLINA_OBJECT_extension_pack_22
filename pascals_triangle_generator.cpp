@@ -11,7 +11,7 @@
 #include <fstream> // output file creation, output file overwriting, output file open, output file close
 #include <vector> // data type for representing mutable arrays in C++ 
 #include <iomanip>  // set width function (std::setw)
-#define MAXIMUM_N 100 // constant which represents the maximum value for N
+#define MAXIMUM_N 20 // constant which represents the maximum value for N
 using namespace std; // including standard namespace makes use of std:: preface optional
 
 /** function prototypes */
