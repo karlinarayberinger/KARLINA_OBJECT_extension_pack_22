@@ -22,8 +22,8 @@
 <p>&#8211; When a Tor service (such as a website or server) is set up, the Tor software generates a public-private key pair using elliptic curve cryptography (earlier versions used RSA keys).</p>
 <p>&#8211; The private key is kept secret and is used to sign data, while the public key is used to derive the .onion address.</p>
 <p>2. Address Derivation:</p>
-<p>&#8211; The .onion address is derived from the hash of the public key. Specifically, a portion of the public key is hashed, and the first 16 or 56 characters of the base32-encoded hash form the .onion address.<br />
-V2 addresses (which are deprecated) use 16 characters derived from an RSA public key.</p>
+<p>&#8211; The .onion address is derived from the hash of the public key. Specifically, a portion of the public key is hashed, and the first 16 or 56 characters of the base32-encoded hash form the .onion address.</p>
+<p>&#8211; V2 addresses (which are deprecated) use 16 characters derived from an RSA public key.</p>
 <p>&#8211; V3 addresses (the current standard) are 56 characters long and based on an elliptic curve public key.<br />
 This process ensures that each .onion address corresponds uniquely to its cryptographic key pair.</p>
 <p>3. Global Uniqueness:</p>
