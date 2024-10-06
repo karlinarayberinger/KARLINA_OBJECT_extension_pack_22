@@ -9,7 +9,7 @@
 /** preprocessing directives */
 #include <iostream> // standard input (std::cin), standard output (std::cout)
 #include <fstream> // output file creation, output file overwriting, output file open, output file close
-#include <cmath> // std::log(), std::sqrt(), std::mod_exp()
+#include <cmath> // std::log(), std::sqrt()
 #include <stdio.h> // NULL macro
 #include <cstdlib> // std::srand(), std::rand()
 #include <ctime> // std::time() 
@@ -18,6 +18,8 @@
 /** function prototypes */
 int * generate_array_of_first_n_primes(int N);
 int select_random_element_from_array_of_integers(int * A, int N);
+int gcd(int A, int B);
+long long mod_exp(long long base, long long exp, long long mod);
 
 /** program entry point */
 int main() 
@@ -230,4 +232,52 @@ int select_random_element_from_array_of_integers(int * A, int N)
 
     // Return the integer value stored in the array named A at the randomly-selected array index.
     return A[random_index];
+}
+
+/**
+ * Use the Euclidean algorithm to compute the greatest common divisor of positive integers A and B.
+ *
+ * (This function assumes that A and B are each natural numbers which are not too large to be overflow values (i.e. values which are too large to be properly represented as positive quantities in the C++ int type variable)).
+ * 
+ * This function is a simplified version (i.e. without printing computational steps to an output stream) of a function which was copied from the following tutorial web page:
+ * 
+ * https://karbytesforlifeblog.wordpress.com/greatest_common_divisor/
+ */
+int gcd(int A, int B)
+{
+    int i = 0, remainder = 0;
+    while (B != 0) 
+    {
+        remainder = A % B;
+        output << "\n\nstep_" << i << ": ";
+        output << "A = " << A << ", B = " << B << ", gcd(A,B) = A % B = " << remainder << ".";
+        A = B;
+        B = remainder;
+        i += 1;
+    }
+    return A;
+}
+
+/**
+ * Calculate (base ^ exp) % mod using modular exponentiation.
+ * 
+ * base may be any integer value (positive, zero, or negative), provided that it can be represented within the type long long (typically a 64-bit signed integer).
+ * 
+ * (For a typical 64-bit operating system, LLONG_MIN = -9,223,372,036,854,775,808 and LLONG_MAX = 9,223,372,036,854,775,807).
+ * 
+ * exp may be any non-negative integer provided it can be represented within the type long long (typically a 64-bit signed integer).
+ * 
+ * mod may be any positive integer provided it can be represented within the type long long (typically a 64-bit signed integer).
+ */
+long long mod_exp(long long base, long long exp, long long mod) 
+{
+    long long result = 1;
+    base = base % mod;
+    while (exp > 0) {
+        if (exp % 2 == 1) // If exp is odd, multiply base with result
+            result = (result * base) % mod;
+        exp = exp >> 1;   // Divide exp by 2
+        base = (base * base) % mod;  // Square the base
+    }
+    return result;
 }
