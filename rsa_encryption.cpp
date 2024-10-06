@@ -20,12 +20,26 @@ int * generate_array_of_first_n_primes(int N);
 int select_random_element_from_array_of_integers(int * A, int N);
 int gcd(int A, int B);
 long long mod_exp(long long base, long long exp, long long mod);
+long long mod_inverse(long long e, long long phi);
 
 /** program entry point */
 int main() 
 {
     // Declare two int type variables which will each store a non-identical prime number.
     int p, q;
+
+    // Declare one long long type variable which will represent the product of p and q and which is part of a public key and private key pairing in an RSA cryptographic system.
+    long long n;
+
+    /**
+     * Declare one long long type variable which will represent, ϕ(n), the output of the following Euler's Totient function of n: 
+     * ϕ(n) = (p − 1) * (q − 1).
+     * 
+     * The totient function represents the number of integers less than n which are coprime with n 
+     * (i.e. the number of integers which are no smaller than 1 and which are no larger than (n - 1) 
+     * which share no common factors with n other than 1).
+     */
+    long long phi;
 
     // Declare and initialize one int type variable which represents the number of elements to store in the dymanic array named A.
     int N = 10000;
@@ -68,6 +82,14 @@ int main()
     std::cout << "\n\n--------------------------------";
     file << "\n\n--------------------------------";
 
+    // Print "STEP_0: Key Generation" to the command line terminal and to the file output stream.
+    std::cout << "\n\nSTEP_0: Key Generation";
+    file << "\n\nSTEP_0: Key Generation";
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
     // Call the function which generates the first N primes and returns a dynamic array which is populated by those primes.
     A = generate_array_of_first_n_primes(N);
 
@@ -83,6 +105,11 @@ int main()
     std::cout << "\n\nq = " << q << " // second prime number";
     file << "\n\np = " << p << " // first prime number";
     file << "\n\nq = " << q << " // second prime number";
+
+    // Print the value of n to the command line terminal and to the output file stream.
+    n = p * q;
+    std::cout << "\n\n = p * q = " << n << " // the modulus in both the encryption and the decryption processes";
+    file << "\n\n = p * q = " << n << " // the modulus in both the encryption and the decryption processes";
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
@@ -280,4 +307,33 @@ long long mod_exp(long long base, long long exp, long long mod)
         base = (base * base) % mod;  // Square the base
     }
     return result;
+}
+
+/**
+ * Calculate the modular multiplicative inverse of e using the Extended Euclidean Algorithm.
+ * 
+ * If e does not have an inverse (that is, if e and phi are not coprime), the function returns -1.
+ * 
+ * e is the number whose modular inverse is to be calculated.
+ * 
+ * e should be a positive integer in the set [1, (phi - 1)].
+ * 
+ * phi is the modulus (often referred to as ϕ in cryptographic applications).
+ * 
+ * phi should be a positive integer.
+ */
+long long mod_inverse(long long e, long long phi) {
+    long long t = 0, new_t = 1;
+    long long r = phi, new_r = e;
+    while (new_r != 0) 
+    {
+        long long quotient = r / new_r;
+        t = t - quotient * new_t;
+        std::swap(t, new_t);
+        r = r - quotient * new_r;
+        std::swap(r, new_r);
+    }
+    if (r > 1) return -1;  // e is not invertible
+    if (t < 0) t += phi;
+    return t;
 }
