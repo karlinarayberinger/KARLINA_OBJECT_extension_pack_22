@@ -21,6 +21,7 @@ int select_random_element_from_array_of_integers(int * A, int N);
 int gcd(int A, int B);
 long long mod_exp(long long base, long long exp, long long mod);
 long long mod_inverse(long long e, long long phi);
+long long select_random_natural_number(int maximum_value);
 
 /** program entry point */
 int main() 
@@ -40,6 +41,9 @@ int main()
      * which share no common factors with n other than 1).
      */
     long long phi;
+
+    // Declare one long long variable to represent a value e such that 1 < e < phi and gcd(e, phi) = 1.
+    long long e;
 
     // Declare and initialize one int type variable which represents the number of elements to store in the dymanic array named A.
     int N = MAXIMUM_N;
@@ -110,6 +114,31 @@ int main()
     n = p * q;
     std::cout << "\n\nn = p * q = " << n << " // the modulus in both the encryption and the decryption processes";
     file << "\n\nn = p * q = " << n << " // the modulus in both the encryption and the decryption processes";
+
+    // Print the value of phi to the command line terminal and to the output file stream.
+    phi = (p - 1) * (q - 1); 
+    std::cout << "\n\nphi = (p - 1) * (q - 1) = " << phi << " // Euler's Totient function: ϕ(n) = (p − 1) * (q − 1)";
+    file << "\n\nphi = (p - 1) * (q - 1) = " << phi << " // Euler's Totient function: ϕ(n) = (p − 1) * (q − 1)";
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
+    // Print "STEP_1: Choose e such that 1 < e < phi and gcd(e, phi) = 1" to the command line terminal and to the file output stream.
+    std::cout << "\n\nSTEP_1: Choose e such that 1 < e < phi and gcd(e, phi) = 1";
+    file << "\n\nSTEP_1: Choose e such that 1 < e < phi and gcd(e, phi) = 1";
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
+    // Select a value for e which is no smaller than one and no larger than phi.
+    e = select_random_natural_number(phi); // public exponent
+    while (gcd(e, phi) != 1) e = select_random_natural_number(phi);
+
+    // Print the values of e to the command line terminal and to the output file stream.
+    std::cout << "\n\ne = " << e << " // public exponent";
+    file << "\n\ne = " << e << " // public exponent";
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
@@ -334,4 +363,23 @@ long long mod_inverse(long long e, long long phi) {
     if (r > 1) return -1;  // e is not invertible
     if (t < 0) t += phi;
     return t;
+}
+
+// Return a natural number which is no smaller than 1 and no larger than maximum_value.
+long long select_random_natural_number(int maximum_value)
+{
+	/**
+     * Seed the pseudo-random number generator with the number of non-leap seconds 
+     * elapsed since some epoch such as the Unix Epoch (which is 01_JANUARY_1970).
+     * 
+     * According to ChatGPT-4o, "Leap seconds are extra seconds added to Coordinated Universal Time (UTC) 
+     * to keep it synchronized with Earth's irregular rotation. The Earth's rotation is not perfectly consistent, 
+     * so occasionally, a leap second is added to adjust the difference between atomic time (measured by highly accurate 
+     * atomic clocks) and astronomical time (based on Earth's rotation). These adjustments ensure that UTC remains within 
+     * 0.9 seconds of UT1, the time standard based on Earth's rotation."
+     */
+    srand(time(NULL));
+
+    // Return a randomly generated integer which is no smaller than one and no larger than maximum_value.
+    return (std::rand() % maximum_value) + 1;
 }
