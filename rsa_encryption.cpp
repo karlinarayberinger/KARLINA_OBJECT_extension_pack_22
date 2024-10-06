@@ -54,6 +54,9 @@ int main()
     // Declare one long long type variable to represent the cyphertext such that m = (c ^ d) % n.
     long long c;
 
+    // Declare one long long type variable to represent the decrypted message such that m = (c ^ d) % n.
+    long long decrypted_message;
+
     // Declare and initialize one int type variable which represents the number of elements to store in the dymanic array named A.
     int N = MAXIMUM_N;
 
@@ -214,7 +217,6 @@ int main()
     file << "\n\nThe value which was entered for m is " << m << ".";
 
     // Print the value of d to the command line terminal and to the output file stream.
-    // Encryption: c = (m ^ e) % n
     c = mod_exp(m, e, n);
     std::cout << "\n\nc = (m ^ e) % n = " << c << " // encryption such that m = (c ^ d) % n";
     file << "\n\nc = (m ^ e) % n = " << c << " // encryption such that m = (c ^ d) % n";
@@ -231,6 +233,23 @@ int main()
     	std::cout << "\n\nm has been reset to " << n << " due to the fact that the input value for m was either less than one or else greater than " << n << ".";
     	file << "\n\nm has been reset to " << n << " due to the fact that the input value for m was either less than one or else greater than " << n << ".";
     }
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
+    // Print "STEP_5: Decrypt the message" to the command line terminal and to the file output stream.
+    std::cout << "\n\nSTEP_5: Decrypt the message";
+    file << "\n\nSTEP_5: Decrypt the message";
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
+    // Print the value of decrypted_message to the command line terminal and to the output file stream.
+    decrypted_message = mod_exp(c, d, n);
+    std::cout << "\n\ndecrypted_message = " << decrypted_message << " // such that m = (c ^ d) % n";
+    file << "\n\ndecrypted_message = " << decrypted_message << " // such that m = (c ^ d) % n";
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
