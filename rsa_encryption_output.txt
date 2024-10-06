@@ -1,0 +1,15 @@
+--------------------------------
+Start Of Program
+--------------------------------
+
+This C++ program demonstrates RSA (Rivest–Shamir–Adleman) encryption and decryption.
+
+--------------------------------
+
+p = 72883 // first prime number
+
+q = 96973 // second prime number
+
+--------------------------------
+End Of Program
+--------------------------------
