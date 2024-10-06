@@ -276,8 +276,6 @@ int gcd(int A, int B)
     while (B != 0) 
     {
         remainder = A % B;
-        output << "\n\nstep_" << i << ": ";
-        output << "A = " << A << ", B = " << B << ", gcd(A,B) = A % B = " << remainder << ".";
         A = B;
         B = remainder;
         i += 1;

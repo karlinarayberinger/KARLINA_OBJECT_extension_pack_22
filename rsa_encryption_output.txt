@@ -6,9 +6,15 @@ This C++ program demonstrates RSA (Rivest–Shamir–Adleman) encryption and dec
 
 --------------------------------
 
-p = 72883 // first prime number
+STEP_0: Key Generation
 
-q = 96973 // second prime number
+--------------------------------
+
+p = 51487 // first prime number
+
+q = 38737 // second prime number
+
+ = p * q = 1994451919 // the modulus in both the encryption and the decryption processes
 
 --------------------------------
 End Of Program
