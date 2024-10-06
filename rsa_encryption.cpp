@@ -42,8 +42,11 @@ int main()
      */
     long long phi;
 
-    // Declare one long long variable to represent a value e such that 1 < e < phi and gcd(e, phi) = 1.
+    // Declare one long long type variable to represent a value e such that 1 < e < phi and gcd(e, phi) = 1.
     long long e;
+
+    // Declare one long long type variable to represent a private key value such that (e ∗ d) % ϕ(n) = 1.
+    long long d;
 
     // Declare and initialize one int type variable which represents the number of elements to store in the dymanic array named A.
     int N = MAXIMUM_N;
@@ -136,9 +139,33 @@ int main()
     e = select_random_natural_number(phi); // public exponent
     while (gcd(e, phi) != 1) e = select_random_natural_number(phi);
 
-    // Print the values of e to the command line terminal and to the output file stream.
+    // Print the value of e to the command line terminal and to the output file stream.
     std::cout << "\n\ne = " << e << " // public exponent";
     file << "\n\ne = " << e << " // public exponent";
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
+    // Print "STEP_2: Compute the private key (d)" to the command line terminal and to the file output stream.
+    std::cout << "\n\nSTEP_2: Compute the private key (d)";
+    file << "\n\nSTEP_2: Compute the private key (d)";
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
+    // Print the value of d to the command line terminal and to the output file stream.
+    d = mod_inverse(e, phi);
+    std::cout << "\n\nd = " << d << " // such that (e ∗ d) % ϕ(n) = 1";
+    file << "\n\nd = " << d << " // such that (e ∗ d) % ϕ(n) = 1";
+
+    // Print a warning message if the modular inverse of d is determined by the program logic not to exist.
+    if (d == -1) 
+    {
+        std::cout << "\n\nWARNING: Modular inverse of e does not exist.";
+        file << "\n\nWARNING: Modular inverse of e does not exist.";
+    }
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
