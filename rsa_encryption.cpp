@@ -13,7 +13,7 @@
 #include <stdio.h> // NULL macro
 #include <cstdlib> // std::srand(), std::rand()
 #include <ctime> // std::time() 
-#define MAXIMUM_N 10000 // constant which represents the maximum value for N
+#define MAXIMUM_N 1000 // constant which represents the maximum value for N
 
 /** function prototypes */
 int * generate_array_of_first_n_primes(int N);
@@ -42,7 +42,7 @@ int main()
     long long phi;
 
     // Declare and initialize one int type variable which represents the number of elements to store in the dymanic array named A.
-    int N = 10000;
+    int N = MAXIMUM_N;
 
     /**
      * Declare a pointer-to-int type variable for storing the address of the first element of a dynamic array of N int type values.
@@ -108,8 +108,8 @@ int main()
 
     // Print the value of n to the command line terminal and to the output file stream.
     n = p * q;
-    std::cout << "\n\n = p * q = " << n << " // the modulus in both the encryption and the decryption processes";
-    file << "\n\n = p * q = " << n << " // the modulus in both the encryption and the decryption processes";
+    std::cout << "\n\nn = p * q = " << n << " // the modulus in both the encryption and the decryption processes";
+    file << "\n\nn = p * q = " << n << " // the modulus in both the encryption and the decryption processes";
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";

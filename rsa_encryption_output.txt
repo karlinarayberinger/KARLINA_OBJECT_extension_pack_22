@@ -10,11 +10,11 @@ STEP_0: Key Generation
 
 --------------------------------
 
-p = 51487 // first prime number
+p = 5297 // first prime number
 
-q = 38737 // second prime number
+q = 1093 // second prime number
 
- = p * q = 1994451919 // the modulus in both the encryption and the decryption processes
+n = p * q = 5789621 // the modulus in both the encryption and the decryption processes
 
 --------------------------------
 End Of Program
