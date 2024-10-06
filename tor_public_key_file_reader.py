@@ -6,7 +6,7 @@
 # license: PUBLIC_DOMAIN 
 #########################################################################################
 
-# Adding the missing import for serialization
+# import for serialization
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import ed25519
 
@@ -14,7 +14,6 @@ from cryptography.hazmat.primitives.asymmetric import ed25519
 key_file_path = 'hs_ed25519_public_key'  # Ensure the correct path is used
 output_file_path_public = 'tor_public_key_file_reader_OUTPUT.txt'  # Output file path
 
-# Re-run the program with the missing imports fixed
 try:
     with open(key_file_path, 'rb') as key_file:
         public_key_data = key_file.read()
