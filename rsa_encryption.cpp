@@ -48,6 +48,12 @@ int main()
     // Declare one long long type variable to represent a private key value such that (e ∗ d) % ϕ(n) = 1.
     long long d;
 
+    // Declare one long long type variable to represent a "message" in the form of a natural number no larger than n.
+    long long m;
+
+    // Declare one long long type variable to represent the cyphertext such that m = (c ^ d) % n.
+    long long c;
+
     // Declare and initialize one int type variable which represents the number of elements to store in the dymanic array named A.
     int N = MAXIMUM_N;
 
@@ -165,6 +171,65 @@ int main()
     {
         std::cout << "\n\nWARNING: Modular inverse of e does not exist.";
         file << "\n\nWARNING: Modular inverse of e does not exist.";
+    }
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
+    // Print "STEP_3: Display the public and private keys" to the command line terminal and to the file output stream.
+    std::cout << "\n\nSTEP_3: Display the public and private keys";
+    file << "\n\nSTEP_3: Display the public and private keys";
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
+    // Print the public and private keys to the command line terminal and to the file output stream.
+    std::cout << "\n\nPublic Key: (" << e << ", " << n << ")";
+    std::cout << "\n\nPrivate Key: (" << d << ", " << n << ")";
+    file << "\n\nPublic Key: (" << e << ", " << n << ")";
+    file << "\n\nPrivate Key: (" << d << ", " << n << ")";
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
+    // Print "STEP_4: Encrypt a message (m must be less than n)" to the command line terminal and to the file output stream.
+    std::cout << "\n\nSTEP_4: Encrypt a message (m must be less than n)";
+    file << "\n\nSTEP_4: Encrypt a message (m must be less than n)";
+
+    // Print a horizontal divider line to the command line terminal and to the file output stream.
+    std::cout << "\n\n--------------------------------";
+    file << "\n\n--------------------------------";
+
+    // Prompt the user to enter a positive integer value to store in the variable named m.
+    std::cout << "\n\nEnter a message to encrypt (as a positive integer less than " << n << "): ";
+
+    // Scan the command line terminal for the most recent keyboard input value. Store that value in m.
+    std::cin >> m;
+
+    // Print "The value which was entered for m is {m}." to the command line terminal and to the file output stream.
+    std::cout << "\nThe value which was entered for m is " << m << ".";
+    file << "\n\nThe value which was entered for m is " << m << ".";
+
+    // Print the value of d to the command line terminal and to the output file stream.
+    // Encryption: c = (m ^ e) % n
+    c = mod_exp(m, e, n);
+    std::cout << "\n\nc = (m ^ e) % n = " << c << " // encryption such that m = (c ^ d) % n";
+    file << "\n\nc = (m ^ e) % n = " << c << " // encryption such that m = (c ^ d) % n";
+
+    /**
+     * If m is smaller than 1 or if m is larger than n, set B to n. 
+     * 
+     * Print "m has been reset to {n} due to the fact that the input value for m was either less than one or else greater than {n}." 
+     * to the command line terminal and to the file output stream.
+     */
+    if ((m < 1) || (m > n)) 
+    {
+    	m = n;
+    	std::cout << "\n\nm has been reset to " << n << " due to the fact that the input value for m was either less than one or else greater than " << n << ".";
+    	file << "\n\nm has been reset to " << n << " due to the fact that the input value for m was either less than one or else greater than " << n << ".";
     }
 
     // Print a closing message to the command line terminal.

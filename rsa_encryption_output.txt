@@ -10,13 +10,13 @@ STEP_0: Key Generation
 
 --------------------------------
 
-p = 5309 // first prime number
+p = 2837 // first prime number
 
-q = 7393 // second prime number
+q = 4211 // second prime number
 
-n = p * q = 39249437 // the modulus in both the encryption and the decryption processes
+n = p * q = 11946607 // the modulus in both the encryption and the decryption processes
 
-phi = (p - 1) * (q - 1) = 39236736 // Euler's Totient function: ϕ(n) = (p − 1) * (q − 1)
+phi = (p - 1) * (q - 1) = 11939560 // Euler's Totient function: ϕ(n) = (p − 1) * (q − 1)
 
 --------------------------------
 
@@ -24,7 +24,7 @@ STEP_1: Choose e such that 1 < e < phi and gcd(e, phi) = 1
 
 --------------------------------
 
-e = 1566559 // public exponent
+e = 6408253 // public exponent
 
 --------------------------------
 
@@ -32,7 +32,27 @@ STEP_2: Compute the private key (d)
 
 --------------------------------
 
-d = 26184607 // such that (e ∗ d) % ϕ(n) = 1
+d = 5648277 // such that (e ∗ d) % ϕ(n) = 1
+
+--------------------------------
+
+STEP_3: Display the public and private keys
+
+--------------------------------
+
+Public Key: (6408253, 11946607)
+
+Private Key: (5648277, 11946607)
+
+--------------------------------
+
+STEP_4: Encrypt a message (m must be less than n)
+
+--------------------------------
+
+The value which was entered for m is 100.
+
+c = (m ^ e) % n = 318335 // encryption such that m = (c ^ d) % n
 
 --------------------------------
 End Of Program
