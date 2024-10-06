@@ -201,7 +201,7 @@ sudo apt install python3-cryptography
 
 Then karbytes worked with ChatGPT-4o to modify the Python code (which was generated during the conversation whose transcript is displayed in the section above this section of this web page) such that it karbytes was able to successfully run both of those Python programs to decrypt the Ed25519 binary files in order to view the private and public keys as alphanumeric sequences.
 
-(For security reasons, karbytes did not upload the output plain-text files named tor_private_key_file_reader_OUTPUT.txt and tor_public_key_file_reader_OUTPUT.txt to the public karbytes-owned GitHub repository named KARLINA_OBJECT_extension_pack_22 (but karbytes did place the Ed25519 binary files and their respective human-readable translation files in a private GitHub repository which karbytes owns)).
+(For security reasons, karbytes did not upload the output plain-text files named tor_private_key_file_reader_OUTPUT.txt and tor_public_key_file_reader_OUTPUT.txt to the public karbytes-owned GitHub repository named KARLINA_OBJECT_extension_pack_22 nor to any other private or public GitHub repository. karbytes did, however, upload those output files’ respective Ed25519 binary files named hs_ed25519_secret_key and hs_ed25519_public_key and, also, the human-readable file named hostname to a private GitHub repository which karbytes owns named karbytes_basement_n).
 
 * * *
 
