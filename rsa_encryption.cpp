@@ -216,11 +216,6 @@ int main()
     std::cout << "\nThe value which was entered for m is " << m << ".";
     file << "\n\nThe value which was entered for m is " << m << ".";
 
-    // Print the value of d to the command line terminal and to the output file stream.
-    c = mod_exp(m, e, n);
-    std::cout << "\n\nc = (m ^ e) % n = " << c << " // encryption such that m = (c ^ d) % n";
-    file << "\n\nc = (m ^ e) % n = " << c << " // encryption such that m = (c ^ d) % n";
-
     /**
      * If m is smaller than 1 or if m is larger than or equal to n, set m to (n - 1). 
      * 
@@ -229,10 +224,15 @@ int main()
      */
     if ((m < 1) || (m >= n)) 
     {
-    	m = n - 1;
-    	std::cout << "\n\nm has been reset to " << (n - 1) << " due to the fact that the input value for m was either less than one or else greater than " << (n - 1) << ".";
-    	file << "\n\nm has been reset to " << (n - 1)  << " due to the fact that the input value for m was either less than one or else greater than " << (n - 1) << ".";
+        m = n - 1;
+        std::cout << "\n\nm has been reset to " << (n - 1) << " due to the fact that the input value for m was either less than one or else greater than " << (n - 1) << ".";
+        file << "\n\nm has been reset to " << (n - 1)  << " due to the fact that the input value for m was either less than one or else greater than " << (n - 1) << ".";
     }
+
+    // Print the value of d to the command line terminal and to the output file stream.
+    c = mod_exp(m, e, n);
+    std::cout << "\n\nc = (m ^ e) % n = " << c << " // encryption such that m = (c ^ d) % n";
+    file << "\n\nc = (m ^ e) % n = " << c << " // encryption such that m = (c ^ d) % n";
 
     // Print a horizontal divider line to the command line terminal and to the file output stream.
     std::cout << "\n\n--------------------------------";
@@ -479,7 +479,7 @@ long long mod_inverse(long long e, long long phi) {
 // Return a natural number which is no smaller than 1 and no larger than maximum_value.
 long long select_random_natural_number(int maximum_value)
 {
-	/**
+    /**
      * Seed the pseudo-random number generator with the number of non-leap seconds 
      * elapsed since some epoch such as the Unix Epoch (which is 01_JANUARY_1970).
      * 
