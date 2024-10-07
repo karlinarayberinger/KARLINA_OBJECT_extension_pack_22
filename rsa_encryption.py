@@ -207,6 +207,46 @@ def main():
         print(f"\n\ne = {e} // public exponent")
         file.write(f"\n\ne = {e} // public exponent")
 
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
+
+        # Print "STEP_2: Compute the private key (d)" to the command line terminal and to the output file.
+        print("\n\nSTEP_2: Compute the private key (d)")
+        file.write("\n\nSTEP_2: Compute the private key (d)")
+
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
+
+        # Print the value of d to the command line terminal and to the output file.
+        d = mod_inverse(e, phi)
+        print(f"\n\nd = {d} // such that (e ∗ d) % ϕ(n) = 1")
+        file.write(f"\n\nd = {d} // such that (e ∗ d) % ϕ(n) = 1")
+
+        # Print a warning message if the modular inverse of d is determined by the program logic not to exist.
+        if (d == -1):
+            print("\n\nWARNING: Modular inverse of e does not exist.")
+            file.write("\n\nWARNING: Modular inverse of e does not exist.")
+
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
+
+        # Print "STEP_3: Display the public and private keys" to the command line terminal and to the output file.
+        print("\n\nSTEP_3: Display the public and private keys")
+        file.write("\n\nSTEP_3: Display the public and private keys")
+
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
+
+        # Print the public and private keys to the command line terminal and to the output file.
+        print(f"\n\nPublic Key: ({e}, {n})")
+        print(f"\n\nPrivate Key: ({d}, {n})")
+        file.write(f"\n\nPublic Key: ({e}, {n})")
+        file.write(f"\n\nPrivate Key: ({d}, {n})")
+    
         # Print a closing message to the command line terminal.
         print("\n\n--------------------------------")
         print("End Of Program")
