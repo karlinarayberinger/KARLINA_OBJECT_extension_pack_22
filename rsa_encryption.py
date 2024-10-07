@@ -282,6 +282,11 @@ def main():
             print(f"\n\nm has been reset to {n - 1} due to the fact that the input value for m was either less than one or else greater than {n - 1}.")
             file.write(f"\n\nm has been reset to {n - 1} due to the fact that the input value for m was either less than one or else greater than {n - 1}.")
 
+        # Print the value of d to the command line terminal and to the output file stream.
+        c = mod_exp(m, e, n)
+        print(f"\n\nc = (m ^ e) % n = {c} // encryption such that m = (c ^ d) % n")
+        file.write(f"\n\nc = (m ^ e) % n = {c} // encryption such that m = (c ^ d) % n")
+
         # Print a horizontal divider line to the command line terminal and to the output file.
         print("\n\n--------------------------------")
         file.write("\n\n--------------------------------")
