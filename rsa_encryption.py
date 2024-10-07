@@ -190,6 +190,23 @@ def main():
         print("\n\n--------------------------------")
         file.write("\n\n--------------------------------")
 
+        # Print "STEP_1: Choose e such that 1 < e < phi and gcd(e, phi) = 1" to the command line terminal and to the output file.
+        print("\n\nSTEP_1: Choose e such that 1 < e < phi and gcd(e, phi) = 1")
+        file.write("\n\nSTEP_1: Choose e such that 1 < e < phi and gcd(e, phi) = 1")
+
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
+
+        # Select a value for e which is no smaller than one and no larger than phi.
+        e = select_random_natural_number(phi)
+        while (gcd(e, phi) != 1):
+            e = select_random_natural_number(phi)
+
+        # Print the value of e to the command line terminal and to the output file stream.
+        print(f"\n\ne = {e} // public exponent")
+        file.write(f"\n\ne = {e} // public exponent")
+
         # Print a closing message to the command line terminal.
         print("\n\n--------------------------------")
         print("End Of Program")
