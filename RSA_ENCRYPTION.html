@@ -250,23 +250,23 @@ int main()
     std::cout &lt;&lt; "\nThe value which was entered for m is " &lt;&lt; m &lt;&lt; ".";
     file &lt;&lt; "\n\nThe value which was entered for m is " &lt;&lt; m &lt;&lt; ".";
 
+    /**
+     * If m is smaller than 1 or if m is larger than or equal to n, set m to (n - 1). 
+     * 
+     * Print "m has been reset to {n - 1} due to the fact that the input value for m was either less than one or else greater than {n - 1}." 
+     * to the command line terminal and to the file output stream.
+     */
+    if ((m &lt; 1) || (m &gt;= n)) 
+    {
+        m = n - 1;
+        std::cout &lt;&lt; "\n\nm has been reset to " &lt;&lt; (n - 1) &lt;&lt; " due to the fact that the input value for m was either less than one or else greater than " &lt;&lt; (n - 1) &lt;&lt; ".";
+        file &lt;&lt; "\n\nm has been reset to " &lt;&lt; (n - 1)  &lt;&lt; " due to the fact that the input value for m was either less than one or else greater than " &lt;&lt; (n - 1) &lt;&lt; ".";
+    }
+
     // Print the value of d to the command line terminal and to the output file stream.
     c = mod_exp(m, e, n);
     std::cout &lt;&lt; "\n\nc = (m ^ e) % n = " &lt;&lt; c &lt;&lt; " // encryption such that m = (c ^ d) % n";
     file &lt;&lt; "\n\nc = (m ^ e) % n = " &lt;&lt; c &lt;&lt; " // encryption such that m = (c ^ d) % n";
-
-    /**
-     * If m is smaller than 1 or if m is larger than n, set B to n. 
-     * 
-     * Print "m has been reset to {n} due to the fact that the input value for m was either less than one or else greater than {n}." 
-     * to the command line terminal and to the file output stream.
-     */
-    if ((m &lt; 1) || (m &gt; n)) 
-    {
-    	m = n;
-    	std::cout &lt;&lt; "\n\nm has been reset to " &lt;&lt; n &lt;&lt; " due to the fact that the input value for m was either less than one or else greater than " &lt;&lt; n &lt;&lt; ".";
-    	file &lt;&lt; "\n\nm has been reset to " &lt;&lt; n &lt;&lt; " due to the fact that the input value for m was either less than one or else greater than " &lt;&lt; n &lt;&lt; ".";
-    }
 
     // Print a horizontal divider line to the command line terminal and to the file output stream.
     std::cout &lt;&lt; "\n\n--------------------------------";
@@ -513,7 +513,7 @@ long long mod_inverse(long long e, long long phi) {
 // Return a natural number which is no smaller than 1 and no larger than maximum_value.
 long long select_random_natural_number(int maximum_value)
 {
-	/**
+    /**
      * Seed the pseudo-random number generator with the number of non-leap seconds 
      * elapsed since some epoch such as the Unix Epoch (which is 01_JANUARY_1970).
      * 
@@ -548,13 +548,13 @@ STEP_0: Key Generation
 
 --------------------------------
 
-p = 1873 // first prime number
+p = 6899 // first prime number
 
-q = 3457 // second prime number
+q = 727 // second prime number
 
-n = p * q = 6474961 // the modulus in both the encryption and the decryption processes
+n = p * q = 5015573 // the modulus in both the encryption and the decryption processes
 
-phi = (p - 1) * (q - 1) = 6469632 // Euler's Totient function: ϕ(n) = (p − 1) * (q − 1)
+phi = (p - 1) * (q - 1) = 5007948 // Euler's Totient function: ϕ(n) = (p − 1) * (q − 1)
 
 --------------------------------
 
@@ -562,7 +562,7 @@ STEP_1: Choose e such that 1 &lt; e &lt; phi and gcd(e, phi) = 1
 
 --------------------------------
 
-e = 5080459 // public exponent
+e = 2717065 // public exponent
 
 --------------------------------
 
@@ -570,7 +570,7 @@ STEP_2: Compute the private key (d)
 
 --------------------------------
 
-d = 111139 // such that (e ∗ d) % ϕ(n) = 1
+d = 2568697 // such that (e ∗ d) % ϕ(n) = 1
 
 --------------------------------
 
@@ -578,9 +578,9 @@ STEP_3: Display the public and private keys
 
 --------------------------------
 
-Public Key: (5080459, 6474961)
+Public Key: (2717065, 5015573)
 
-Private Key: (111139, 6474961)
+Private Key: (2568697, 5015573)
 
 --------------------------------
 
@@ -590,7 +590,7 @@ STEP_4: Encrypt a message (m must be less than n)
 
 The value which was entered for m is 666.
 
-c = (m ^ e) % n = 2422484 // encryption such that m = (c ^ d) % n
+c = (m ^ e) % n = 4742191 // encryption such that m = (c ^ d) % n
 
 --------------------------------
 
