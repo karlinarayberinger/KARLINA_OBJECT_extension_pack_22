@@ -213,7 +213,7 @@ int main()
     std::cin >> m;
 
     // Print "The value which was entered for m is {m}." to the command line terminal and to the file output stream.
-    std::cout << "\nThe value which was entered for m is " << m << ".";
+    std::cout << "\n\nThe value which was entered for m is " << m << ".";
     file << "\n\nThe value which was entered for m is " << m << ".";
 
     /**
