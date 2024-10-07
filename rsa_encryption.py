@@ -176,6 +176,20 @@ def main():
         file.write(f"\n\np = {p} // first prime number")
         file.write(f"\n\nq = {q} // second prime number")
 
+        # Print the value of n to the command line terminal and to the output file.
+        n = p * q
+        print(f"\n\nn = p * q = {n} // the modulus in both the encryption and the decryption processes")
+        file.write(f"\n\nn = p * q = {n} // the modulus in both the encryption and the decryption processes")
+
+        # Print the value of phi to the command line terminal and to the output file.
+        phi = (p - 1) * (q - 1)
+        print(f"\n\nphi = (p - 1) * (q - 1) = {phi} // Euler's Totient function: ϕ(n) = (p − 1) * (q − 1)")
+        file.write(f"\n\nphi = (p - 1) * (q - 1) = {phi} // Euler's Totient function: ϕ(n) = (p − 1) * (q − 1)")
+
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
+
         # Print a closing message to the command line terminal.
         print("\n\n--------------------------------")
         print("End Of Program")
