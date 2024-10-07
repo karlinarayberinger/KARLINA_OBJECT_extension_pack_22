@@ -281,6 +281,23 @@ def main():
             m = n - 1
             print(f"\n\nm has been reset to {n - 1} due to the fact that the input value for m was either less than one or else greater than {n - 1}.")
             file.write(f"\n\nm has been reset to {n - 1} due to the fact that the input value for m was either less than one or else greater than {n - 1}.")
+
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
+
+        # Print "STEP_5: Decrypt the message" to the command line terminal and to the output file.
+        print("\n\nSTEP_5: Decrypt the message")
+        file.write("\n\nSTEP_5: Decrypt the message")
+
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
+
+        # Print the value of decrypted_message to the command line terminal and to the output file.
+        decrypted_message = mod_exp(c, d, n)
+        print(f"\n\ndecrypted_message = {decrypted_message} // such that m = (c ^ d) % n")
+        file.write(f"\n\ndecrypted_message = {decrypted_message} // such that m = (c ^ d) % n")
     
         # Print a closing message to the command line terminal.
         print("\n\n--------------------------------")
