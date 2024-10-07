@@ -179,7 +179,7 @@ int main()
     file &lt;&lt; "\n\n--------------------------------";
 
     // Select a value for e which is no smaller than one and no larger than phi.
-    e = select_random_natural_number(phi); // public exponent
+    e = select_random_natural_number(phi); 
     while (gcd(e, phi) != 1) e = select_random_natural_number(phi);
 
     // Print the value of e to the command line terminal and to the output file stream.
