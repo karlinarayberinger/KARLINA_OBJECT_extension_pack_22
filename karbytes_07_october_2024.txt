@@ -1,7 +1,7 @@
 /**
  * file: karbytes_07_october_2024.txt
  * type: plain-text
- * date: 04_OCTOBER_2024
+ * date: 07_OCTOBER_2024
  * author: karbytes
  * license: PUBLIC_DOMAIN
  */
@@ -35,3 +35,11 @@ To wrap this note up (and hopefully to not "have to" open it up again with "bad 
 True intelligence is a measure of how good you are at making decisions "in real time" (especially in adverserial and/or "fast paced" times) which ultimately lead to you getting more of what you really want in life and less of what you really don't want in life. Though it may be socially normal and even encouraged in some contexts to seek revenge on whoever "wrongs" you, it is ultimately a waste of your cognitive resources and time if you channel those resources towards doing someone wrong (in an effort to "enforce justice" on your own terms) instead of towards bettering your situation, your skill-set, and your well-being (and benefiting the world at large). Human nervous systems have some kludgy adaptations which make them more prone to focusing on what they percieve as threats and sources of "emotional negativity" than they are on innovating solutions to problems. The latter takes more intelligence than does the former, but choosing the "higher intelligence" path builds better problem-solving neural pathways in the human brain (especially if practiced consistently and suplimented with healthy psychedelics (especially psilocybin)). 
 
 (When "thugs" physically beat me up, robbed me, verbally harassed me, and vandalized my belongings, I inevitably got into "fight or flight" mode as cortisol flooded my bloodstream, my heart rate increased, and I felt the need to take immediate action to defend myself. I did not experience the desire to "get revenge" until at least a few hours after most of those experiences (except for the ones where the vandalism happened while I was not looking or the incident was merely verbal harassment). When I felt the desire to "get revenge", I already learned to not react the way the antogonist seemed to want me to (and I could tell that the person taunting me was hoping I would fall to its intelligence level so that we would become embroiled in a recursive loop of retaliatory war-like behavior). I will just leave those people to figure themselves out and hope that they find a way to really solve the problems that are causing them to have to inflict harm on people other than themselves to feel better about their presumably shitty situation. I think that happy people are not as likely to want to increase the amount of suffering in the world (and I am excluding the category of suffering which is the discomfort (but not serious long-term damage) which inevitably occurs as a product of investing oneself in effortful and challenging situations)).
+
+* * *
+
+This part of this note was added at approximately 9:30AM Pacific Standard Time on 07_OCTOBER_2024. Everything in this note which is above this section of this note (except for the date value (which was changed from 04_OCTOBER_2024 to 07_OCTOBER_2024)) was generated and finalized between 12:00AM Pacific Standard Time on 04_OCTOBER_2024 and 11:59PM Pacific Standard Time on 04_OCTOBER_2024…
+
+* * *
+
+Last night (or early this morning at approximately 3:00AM Pacific Standard Time on 07_OCTOBER_2024) I was bicycling from where I was working on my latest software application (i.e. RSA_ENCRYPTION_TWO) to the location I've been camping at during the past two months without any difficulty. When I woke up at approximately 9:00AM Pacific Standard Time on 07_OCTOBER_2024, I noticed the back tire of my bicycle was flat. This is the fifth time a tire of my bicycle went flat (and I strongly suspect some human did it intentionally and I noticed that the flats tend to happen within twelve hours of uploading a photograph of my location to a public GitHub repository). I'm on my way to the Sunnyvale REI now to get the bicycle fixed.
