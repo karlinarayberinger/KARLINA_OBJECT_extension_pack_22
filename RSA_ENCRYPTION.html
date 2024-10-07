@@ -410,13 +410,13 @@ int * generate_array_of_first_n_primes(int N)
  */
 int select_random_element_from_array_of_integers(int * A, int N)
 {
-	if ((N &lt; 1) || (N &gt; MAXIMUM_N)) 
-	{
-		std::cout &lt;&lt; "\n\nError: the N value passed into select_random_element_from_array_of_integers(int * A, int N) must be a natural number no larger than " &lt;&lt; MAXIMUM_N &lt;&lt; ".";
-		return -1;
-	}
+    if ((N &lt; 1) || (N &gt; MAXIMUM_N)) 
+    {
+        std::cout &lt;&lt; "\n\nError: the N value passed into select_random_element_from_array_of_integers(int * A, int N) must be a natural number no larger than " &lt;&lt; MAXIMUM_N &lt;&lt; ".";
+        return -1;
+    }
 
-	/**
+    /**
      * Seed the pseudo-random number generator with the number of non-leap seconds 
      * elapsed since some epoch such as the Unix Epoch (which is 01_JANUARY_1970).
      * 
@@ -427,7 +427,7 @@ int select_random_element_from_array_of_integers(int * A, int N)
      * 0.9 seconds of UT1, the time standard based on Earth's rotation."
      */
     srand(time(NULL));
-
+    
     // Generate a random array index number (which is a value in the set [0, (N - 1)]).
     int random_index = std::rand() % N;
 
