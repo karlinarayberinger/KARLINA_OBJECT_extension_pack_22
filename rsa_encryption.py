@@ -246,6 +246,41 @@ def main():
         print(f"\n\nPrivate Key: ({d}, {n})")
         file.write(f"\n\nPublic Key: ({e}, {n})")
         file.write(f"\n\nPrivate Key: ({d}, {n})")
+
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
+
+        # Print "STEP_4: Encrypt a message (m must be less than n)" to the command line terminal and to the output file.
+        print("\n\nSTEP_4: Encrypt a message (m must be less than n)")
+        file.write("\n\nSTEP_4: Encrypt a message (m must be less than n)")
+
+        # Print a horizontal divider line to the command line terminal and to the output file.
+        print("\n\n--------------------------------")
+        file.write("\n\n--------------------------------")
+
+        #
+        # Prompt the user to enter a positive integer value to store in the variable named m.
+        # Scan the command line terminal for the most recent keyboard input value. 
+        # Convert that value to an integer value.
+        # Store that integer value in m.
+        #
+        m = int(input(f"\n\nEnter a message to encrypt (as a positive integer less than {n}): "))
+
+        # Print "The value which was entered for m is {m}." to the command line terminal and to the output file.
+        print(f"\n\nThe value which was entered for m is {m}.")
+        file.write(f"\n\nThe value which was entered for m is {m}.")
+
+        #
+        # If m is smaller than 1 or if m is larger than or equal to n, set m to (n - 1). 
+        #
+        # Print "m has been reset to {n - 1} due to the fact that the input value for m was either less than one or else greater than {n - 1}." 
+        # to the command line terminal and to the file output stream.
+        #
+        if ((m < 1) or (m >= n)):
+            m = n - 1
+            print(f"\n\nm has been reset to {n - 1} due to the fact that the input value for m was either less than one or else greater than {n - 1}.")
+            file.write(f"\n\nm has been reset to {n - 1} due to the fact that the input value for m was either less than one or else greater than {n - 1}.")
     
         # Print a closing message to the command line terminal.
         print("\n\n--------------------------------")
