@@ -1,0 +1,20 @@
+--------------------------------
+Start Of Program
+--------------------------------
+
+
+This Python program demonstrates RSA (Rivest–Shamir–Adleman) encryption and decryption.
+
+--------------------------------
+
+STEP_0: Key Generation
+
+--------------------------------
+
+p = 1777 // first prime number
+
+q = 11 // second prime number
+
+--------------------------------
+End Of Program
+--------------------------------

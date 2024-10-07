@@ -73,6 +73,10 @@ def select_random_natural_number(maximum_value):
 def main():
     #
     # Unlike C++ variables, Python variables have no data types and must be assigned initial values.
+    # 
+    # Basically, none of the following variable definitions before the following statement are necessary: 
+    #
+    #     with open("rsa_encryption_output.txt", "w") as file:
     #
 
     # p and q will be assigned non-identical prime numbers.
@@ -154,6 +158,23 @@ def main():
         # Print a horizontal divider line to the command line terminal and to the output file.
         print("\n\n--------------------------------")
         file.write("\n\n--------------------------------")
+
+        # Call the function which generates the first N primes and returns a dynamic array which is populated by those primes.
+        A = generate_array_of_first_n_primes(N)
+
+        # Set the value of p to a randomly-selected value in A (which is a prime number).
+        p = select_random_element_from_array_of_integers(A)
+
+        # Set the value of q to a randomly-selected value in A which is not the same value as p (and which is also a prime number).
+        q = p
+        while p == q:
+            q = select_random_element_from_array_of_integers(A)
+
+        # Print the values of p and q to the command line terminal and to the output file.
+        print(f"\n\np = {p} // first prime number")
+        print(f"\n\nq = {q} // second prime number")
+        file.write(f"\n\np = {p} // first prime number")
+        file.write(f"\n\nq = {q} // second prime number")
 
         # Print a closing message to the command line terminal.
         print("\n\n--------------------------------")
