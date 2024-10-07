@@ -71,7 +71,7 @@ def select_random_natural_number(maximum_value):
 #######################################################
 
 def main():
-	#
+    #
     # Unlike C++ variables, Python variables have no data types and must be assigned initial values.
     #
 
