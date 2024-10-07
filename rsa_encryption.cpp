@@ -222,16 +222,16 @@ int main()
     file << "\n\nc = (m ^ e) % n = " << c << " // encryption such that m = (c ^ d) % n";
 
     /**
-     * If m is smaller than 1 or if m is larger than n, set B to n. 
+     * If m is smaller than 1 or if m is larger than or equal to n, set m to (n - 1). 
      * 
-     * Print "m has been reset to {n} due to the fact that the input value for m was either less than one or else greater than {n}." 
+     * Print "m has been reset to {n - 1} due to the fact that the input value for m was either less than one or else greater than {n - 1}." 
      * to the command line terminal and to the file output stream.
      */
-    if ((m < 1) || (m > n)) 
+    if ((m < 1) || (m >= n)) 
     {
-    	m = n;
-    	std::cout << "\n\nm has been reset to " << n << " due to the fact that the input value for m was either less than one or else greater than " << n << ".";
-    	file << "\n\nm has been reset to " << n << " due to the fact that the input value for m was either less than one or else greater than " << n << ".";
+    	m = n - 1;
+    	std::cout << "\n\nm has been reset to " << (n - 1) << " due to the fact that the input value for m was either less than one or else greater than " << (n - 1) << ".";
+    	file << "\n\nm has been reset to " << (n - 1)  << " due to the fact that the input value for m was either less than one or else greater than " << (n - 1) << ".";
     }
 
     // Print a horizontal divider line to the command line terminal and to the file output stream.
@@ -376,13 +376,13 @@ int * generate_array_of_first_n_primes(int N)
  */
 int select_random_element_from_array_of_integers(int * A, int N)
 {
-	if ((N < 1) || (N > MAXIMUM_N)) 
-	{
-		std::cout << "\n\nError: the N value passed into select_random_element_from_array_of_integers(int * A, int N) must be a natural number no larger than " << MAXIMUM_N << ".";
-		return -1;
-	}
+    if ((N < 1) || (N > MAXIMUM_N)) 
+    {
+        std::cout << "\n\nError: the N value passed into select_random_element_from_array_of_integers(int * A, int N) must be a natural number no larger than " << MAXIMUM_N << ".";
+        return -1;
+    }
 
-	/**
+    /**
      * Seed the pseudo-random number generator with the number of non-leap seconds 
      * elapsed since some epoch such as the Unix Epoch (which is 01_JANUARY_1970).
      * 
@@ -393,7 +393,7 @@ int select_random_element_from_array_of_integers(int * A, int N)
      * 0.9 seconds of UT1, the time standard based on Earth's rotation."
      */
     srand(time(NULL));
-
+    
     // Generate a random array index number (which is a value in the set [0, (N - 1)]).
     int random_index = std::rand() % N;
 
