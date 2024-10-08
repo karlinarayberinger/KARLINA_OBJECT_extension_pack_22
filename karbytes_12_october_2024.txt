@@ -18,4 +18,12 @@ One last thing: tomorrow I am expecting a set of three blank M_DISCs I ordered f
 
 karbytes_new_mdisc_addition: https://karbytesforlifeblog.wordpress.com/preparing_to_make_mdisc_set_on_29september2024/
 
-karbytes_mdisc_collection_running_total: https://karbytesforlifeblog.wordpress.com/mdisc_karbytes_ultra_2024_edition_15/ 
+karbytes_mdisc_collection_running_total: https://karbytesforlifeblog.wordpress.com/mdisc_karbytes_ultra_2024_edition_15/
+
+* * *
+
+08_OCTOBER_2024: I noticed that the Wi-Fi network at my house is (generally) too weak to establish a connection with my .onion web page (which is hosted on my Linux laptop using Apache server software and accessible via the Tor network) but using my Android phone to establish a mobile hotspot seems to be slightly more likely to enable my devices to access that .onion web page (when I use the phone to establish a Wi-Fi hotspot (to connect my laptop to the Internet) by turning the phone into a mobile Wi-Fi router). I checked the configuration files for the tor and apache2 service on my laptop and saw that they should apparently enable my .onion web page to be discovered globally (using a dark web browser such as the Tor browser).
+
+I was able to access that .onion web page via the Wi-Fi network at Philz Coffee in Sunnyvale (and saw that the Internet speed there was maximum according to the Ookla Speed Test website). To be precise, I was able to successfully load my .onion web page via the Tor browser app on my phone via my phone’s AT&T mobile network while my laptop was connected to the Internet via the Philz Coffee Wi-Fi. For more details on how that was accomplished, see the following web page: https://karbytesforlifeblog.wordpress.com/karbytes_05_october_2024/
+
+The Wi-Fi network at my house (which is established via a stationary AT&T modem plugged into the wall behind the television set in the living room) is very weak according to Ookla (i.e. only approximately 6.70 megabits per second for downloads and only approximately 0.52 megabits per second for uploads). By contrast, my Android phone (at my residence) is slightly stronger than the house Wi-Fi according to Ookla (i.e. approximately 12.9 megabits per second for downloads and approximately 0.67 megabits per second for uploads). 
